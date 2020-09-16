@@ -1,0 +1,70 @@
+[
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "luankevinferreira.expenses:id/fab",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "luankevinferreira.expenses",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.22990833678179315,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "",
+    "text": "",
+    "content-desc": "Navigate up",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "event_type": "gui",
+    "score": 0.13996347164114317,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "oracle"
+  }
+]

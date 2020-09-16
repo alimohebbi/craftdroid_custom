@@ -1,0 +1,82 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "cz.martykan.forecastie:id/action_search",
+    "text": "",
+    "content-desc": "Search",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a81",
+    "package": "cz.martykan.forecastie",
+    "activity": ".activities.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a81",
+    "package": "cz.martykan.forecastie",
+    "activity": ".activities.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "atlanta"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "android:id/button1",
+    "text": "OK",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Cancel",
+    "tid": "a81",
+    "package": "cz.martykan.forecastie",
+    "activity": ".activities.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "",
+    "text": "Atlanta, US",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a81",
+    "package": "cz.martykan.forecastie",
+    "activity": ".activities.MainActivity",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.TextView[@text=\"Atlanta, US\"]"
+    ]
+  }
+]

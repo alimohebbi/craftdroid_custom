@@ -1,0 +1,157 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.moonpi.swiftnotes:id/action_search",
+    "text": "",
+    "content-desc": "Search",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.26347263529896736,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "",
+    "text": "",
+    "content-desc": "Collapse",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "action": [
+      "click"
+    ],
+    "activity": ".MainActivity",
+    "package": "com.moonpi.swiftnotes",
+    "event_type": "stepping"
+  },
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "com.moonpi.swiftnotes:id/newNote",
+    "text": "",
+    "content-desc": "New note",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Press '+' to add new note",
+    "stepping_events": [
+      {
+        "class": "android.widget.ImageButton",
+        "resource-id": "",
+        "id-prefix": "",
+        "text": "",
+        "content-desc": "Collapse",
+        "clickable": "true",
+        "password": "false",
+        "naf": "",
+        "parent_text": "",
+        "sibling_text": "",
+        "action": [
+          "click"
+        ],
+        "activity": ".MainActivity",
+        "package": "com.moonpi.swiftnotes",
+        "event_type": "stepping"
+      }
+    ],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.27247387419144314,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "com.moonpi.swiftnotes:id/titleEdit",
+    "text": "Title",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".EditActivity",
+    "event_type": "gui",
+    "score": 0.4199091736227274,
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "note"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "com.moonpi.swiftnotes:id/bodyEdit",
+    "text": "Note",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".EditActivity",
+    "event_type": "gui",
+    "score": 0.11910901676552992,
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "something"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.moonpi.swiftnotes:id/action_note_colour",
+    "text": "",
+    "content-desc": "Note color",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".EditActivity",
+    "event_type": "gui",
+    "score": 0.10938857185343902,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "android:id/alertTitle",
+    "text": "Change note color",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "com.moonpi.swiftnotes",
+    "activity": ".EditActivity",
+    "event_type": "oracle",
+    "score": 0.3488470958545804,
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.TextView[1][@text=\"Change note color\"]"
+    ]
+  }
+]

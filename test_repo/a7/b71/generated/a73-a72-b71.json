@@ -1,0 +1,60 @@
+[
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "me.writeily:id/fab_expand_menu_button",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "me.writeily",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.16666666666666666,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "SYS_EVENT",
+    "action": [
+      "KEY_BACK"
+    ],
+    "event_type": "SYS_EVENT"
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "me.writeily:id/empty_hint",
+    "text": "This directory is empty",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "me.writeily",
+    "activity": ".MainActivity",
+    "event_type": "oracle",
+    "score": 0.19953876857956251,
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.RelativeLayout/android.widget.TextView[1][@text=\"This directory is empty\"]"
+    ]
+  }
+]

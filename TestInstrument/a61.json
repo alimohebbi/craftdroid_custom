@@ -1,0 +1,140 @@
+[
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "luankevinferreira.expenses:id/fab",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "luankevinferreira.expenses:id/expense_value",
+    "text": "0.00",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "45"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "luankevinferreira.expenses:id/expense_description",
+    "text": "Add a description",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "restaurant"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "luankevinferreira.expenses:id/date_picker",
+    "text": "05-22-2020",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "android:id/button1",
+    "text": "OK",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Cancel",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "luankevinferreira.expenses:id/save_expense",
+    "text": "Save",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".ExpenseActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "luankevinferreira.expenses:id/total_month",
+    "text": "$45.00",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Total of month expenses",
+    "tid": "a61",
+    "package": "luankevinferreira.expenses",
+    "activity": ".MainActivity",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.Button[@text=\"$45.00\"]"
+    ]
+  }
+]

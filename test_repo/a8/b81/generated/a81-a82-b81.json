@@ -1,0 +1,103 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "org.asdtm.goodweather:id/main_menu_search_city",
+    "text": "",
+    "content-desc": "Search City",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "org.asdtm.goodweather",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.42220977135002613,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "org.asdtm.goodweather:id/city_name",
+    "text": "London",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "action": [
+      "click"
+    ],
+    "activity": ".SearchActivity",
+    "package": "org.asdtm.goodweather",
+    "event_type": "stepping"
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "org.asdtm.goodweather:id/main_temperature",
+    "text": "25\u00b0",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "\uf013",
+    "stepping_events": [
+      {
+        "class": "android.widget.TextView",
+        "resource-id": "city_name",
+        "id-prefix": "org.asdtm.goodweather:id/",
+        "text": "London",
+        "content-desc": "",
+        "clickable": "true",
+        "password": "false",
+        "naf": "",
+        "parent_text": "",
+        "sibling_text": "",
+        "action": [
+          "click"
+        ],
+        "activity": ".SearchActivity",
+        "package": "org.asdtm.goodweather",
+        "event_type": "stepping"
+      }
+    ],
+    "package": "org.asdtm.goodweather",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.16666666666666666,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "",
+    "text": "London, UK",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "org.asdtm.goodweather",
+    "activity": ".MainActivity",
+    "event_type": "oracle",
+    "score": 0.21514017134904861,
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.view.ViewGroup/android.widget.TextView[@text=\"London, UK\"]"
+    ]
+  }
+]

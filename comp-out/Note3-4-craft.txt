@@ -1,0 +1,181 @@
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 20:17:06.806128
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'me.writeily:id/fab_expand_menu_button', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.16666666666666666, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'me.writeily:id/create_note', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+Adding edge: from chan.android.app.pocketnote.MainActivity: void onCreate(android.os.Bundle) to chan.android.app.pocketnote.app.notes.EditNoteActivity: void onCreate(android.os.Bundle)
+label is: D@text=Add Note&content-desc=&class=android.widget.TextView&resource-id=&naf= (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(2/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'editor_$_button_pick_color', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'me.writeily:id/edit_note_title', 'text': 'Title', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'note']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_edittext_title', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_note_editor', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'me.writeily:id/note_content', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'something']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_note_editor', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_edittext_title', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'editor_$_button_pick_color', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(3/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'me.writeily:id/note_title', 'text': 'note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="note"]']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity', 'event_type': 'oracle', 'score': 0.35025599660972756, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="Pocket Note"]']}
+--
+Current target events with fitness 0.19179466497153044:
+{'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.16666666666666666, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity', 'event_type': 'oracle', 'score': 0.35025599660972756, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="Pocket Note"]']}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 20:20:11.070339
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'me.writeily:id/fab_expand_menu_button', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.MainActivity -> chan.android.app.pocketnote.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.16666666666666666, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'me.writeily:id/create_note', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(2/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'editor_$_button_pick_color', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'me.writeily:id/edit_note_title', 'text': 'Title', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'note']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_edittext_title', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_note_editor', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'me.writeily:id/note_content', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'something']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_note_editor', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'editor_$_edittext_title', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.NoteActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'editor_$_button_pick_color', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'notes_menu_$_add', 'id-prefix': 'chan.android.app.pocketnote:id/', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(3/10) Validating Similar w: {'resource-id': 'main_$_textview_username', 'text': 'Anonymous', 'class': 'android.widget.TextView', 'oId': '2131492970', 'layout_name': 'main', 'layout_oId': '2130903071', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'me.writeily:id/note_title', 'text': 'note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a72', 'package': 'me.writeily', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="note"]']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.MainActivity. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity'}
+Activity transition: chan.android.app.pocketnote.app.notes.EditNoteActivity -> chan.android.app.pocketnote.app.notes.EditNoteActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity', 'event_type': 'oracle', 'score': 0.35025599660972756, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="Pocket Note"]']}
+--
+Current target events with fitness 0.19179466497153044:
+{'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.16666666666666666, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity', 'event_type': 'oracle', 'score': 0.35025599660972756, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="Pocket Note"]']}
+Finished. Learned actions
+{'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Add Note', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.16666666666666666, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Pocket Note', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'chan.android.app.pocketnote', 'activity': '.app.notes.EditNoteActivity', 'event_type': 'oracle', 'score': 0.35025599660972756, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[1][@text="Pocket Note"]']}
+Transfer time in sec: 366.5762839317322
+Start testing learned actions
+Testing time in sec: 16.99089217185974
+      389.30 real         2.14 user         0.46 sys

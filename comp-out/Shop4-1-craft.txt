@@ -1,0 +1,395 @@
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 03:48:43.168735
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+** wDB (SA) popped: {'resource-id': 'empty_listview_textview', 'text': 'You have no shopping lists. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_main', 'layout_oId': '2130968603', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.10789164000501235, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'android:id/title', 'text': 'New list', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+Adding self-loop: pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle), label: D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)
+(1/10) Validating Similar w: {'resource-id': 'empty_listview_textview', 'text': 'You have no items on the list. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_shopping_list_view', 'layout_oId': '2130968605', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 3 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+Adding self-loop: pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle), label: D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab (onClick)
+(2/10) Validating Similar w: {'resource-id': 'shoppingListNameTextView', 'class': 'android.widget.TextView', 'oId': '2131689630', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(3/10) Validating Similar w: {'resource-id': 'fab', 'class': 'android.widget.ImageButton', 'oId': '2131689606', 'layout_name': 'activity_main', 'layout_oId': '2130968603', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.1189919722576936, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'org.openintents.shopping:id/edittext', 'text': 'e.g. wishlist, family list', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'list1']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'android:id/button1', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'resource-id': 'empty_listview_textview', 'text': 'You have no items on the list. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_shopping_list_view', 'layout_oId': '2130968605', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Adding edge: from pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle) to pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab (onClick)
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(2/10) Validating Similar w: {'resource-id': 'shoppingListNameTextView', 'class': 'android.widget.TextView', 'oId': '2131689630', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(3/10) Validating Similar w: {'resource-id': 'percentTextView', 'class': 'android.widget.TextView', 'oId': '2131689631', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(4/10) Validating Similar w: {'resource-id': 'itemsCountTextView', 'class': 'android.widget.TextView', 'oId': '2131689632', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(5/10) Validating Similar w: {'resource-id': 'shoppingListModificationDateTextView', 'class': 'android.widget.TextView', 'oId': '2131689633', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(6/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.09157891695698102, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.Spinner', 'resource-id': 'org.openintents.shopping:id/spinner_listfilter', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.CheckedTextView', 'resource-id': 'android:id/text1', 'text': 'list1', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button_add_item', 'text': 'Add', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 8 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Known invalid path prefix: ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Known invalid path prefix: ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+(2/10) Validating Similar w: {'resource-id': 'empty_listview_textview', 'text': 'You have no items on the list. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_shopping_list_view', 'layout_oId': '2130968605', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(3/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 8 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Known invalid path prefix: ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+Known invalid path prefix: ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)']
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', None, 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+(4/10) Validating Similar w: {'resource-id': 'itemsCountTextView', 'class': 'android.widget.TextView', 'oId': '2131689632', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(5/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.15639762269953886, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button1', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ui.PickItemsActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'resource-id': 'empty_listview_textview', 'text': 'You have no items on the list. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_shopping_list_view', 'layout_oId': '2130968605', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  []
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+(2/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 8 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.09378854019774331, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'org.openintents.shopping:id/autocomplete_add_item', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'item1']}
+Adding self-loop: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle), label: D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607, 'action': ['send_keys_and_hide_keyboard', 'item1']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button_add_item', 'text': 'Add', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.32553576098548037, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'org.openintents.shopping:id/name', 'text': 'item1', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="item1"]']}
+Adding edge: from pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle) to pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'item1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 8 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'item1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'oracle', 'score': 0.4249122502903144, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="item1"]']}
+--
+Current target events with fitness 0.26817372364199:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.10789164000501235, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.1189919722576936, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.09157891695698102, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.15639762269953886, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.09378854019774331, 'action': ['click']}
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607, 'action': ['send_keys_and_hide_keyboard', 'item1']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.32553576098548037, 'action': ['click']}
+{'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'item1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'oracle', 'score': 0.4249122502903144, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="item1"]']}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 04:11:41.776835
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 10 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19218376775582632, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'android:id/title', 'text': 'New list', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+Adding edge: from pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle) to pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=Navigate up&class=android.widget.ImageButton&text=&naf=&resource-id= (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 10 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19630925357341766, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'org.openintents.shopping:id/edittext', 'text': 'e.g. wishlist, family list', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'list1']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.24469894667466482, 'action': ['send_keys_and_hide_keyboard', 'list1']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'android:id/button1', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19618278245131174, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.Spinner', 'resource-id': 'org.openintents.shopping:id/spinner_listfilter', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.CheckedTextView', 'resource-id': 'android:id/text1', 'text': 'list1', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button_add_item', 'text': 'Add', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.MainActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 10 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.32553576098548037, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button1', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ui.PickItemsActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'resource-id': 'empty_listview_textview', 'text': 'You have no items on the list. Add one using the button below.', 'class': 'android.widget.TextView', 'oId': '2131689612', 'layout_name': 'activity_shopping_list_view', 'layout_oId': '2130968605', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.09378854019774331, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'org.openintents.shopping:id/autocomplete_add_item', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'item1']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+Duplicated match (previous): {'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607}
+. Skipped.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'shoppingListDescriptionEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Shopping list name', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListDescriptionEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Shopping list name', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607, 'action': ['send_keys_and_hide_keyboard', 'item1']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'org.openintents.shopping:id/button_add_item', 'text': 'Add', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.40886909431881374, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'org.openintents.shopping:id/name', 'text': 'item1', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a94', 'package': 'org.openintents.shopping', 'activity': '.ShoppingActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="item1"]']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'item1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+(2/10) Validating Similar w: {'resource-id': 'shoppingListNameTextView', 'class': 'android.widget.TextView', 'oId': '2131689630', 'layout_name': 'listview_shoplists', 'layout_oId': '2130968621', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Skip the widget without the attribute that the action is waiting for
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nav_user_name_textview', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'list1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.MainActivity. 4 paths to validate.
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=Open navigation drawer&class=android.widget.ImageButton&text=&naf=&resource-id=', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': 'Open navigation drawer', 'class': 'android.widget.ImageButton', 'text': '', 'naf': '', 'resource-id': ''}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'D@content-desc=&class=android.widget.ImageButton&text=&naf=true&resource-id=fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'text': '', 'naf': 'true', 'resource-id': 'fab'}
+Validating path:  ['pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity', 'D@content-desc=&class=android.widget.Button&text=Save&naf=&resource-id=addShoppingListButton', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity', 'fab', 'pl.com.andrzejgrzyb.shoppinglist.MainActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'text': 'Save', 'naf': '', 'resource-id': 'addShoppingListButton'}
+(5/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity'}
+Activity transition: pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity -> pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'oracle', 'score': 0.21613102654616037, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="Save"]']}
+--
+Current target events with fitness 0.2019522964126534:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19218376775582632, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19630925357341766, 'action': ['click']}
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.24469894667466482, 'action': ['send_keys_and_hide_keyboard', 'list1']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.19618278245131174, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.32553576098548037, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.09378854019774331, 'action': ['click']}
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListDescriptionEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Shopping list name', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607, 'action': ['send_keys_and_hide_keyboard', 'item1']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.40886909431881374, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'item1', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'oracle', 'score': 0.21613102654616037, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="Save"]']}
+Finished. Learned actions
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.10789164000501235, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.1189919722576936, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Open navigation drawer', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.09157891695698102, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.15639762269953886, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': '.MainActivity', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'event_type': 'stepping'}], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.09378854019774331, 'action': ['click']}
+{'class': 'android.widget.EditText', 'resource-id': 'shoppingListNameEditText', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.22016751683420607, 'action': ['send_keys_and_hide_keyboard', 'item1']}
+{'class': 'android.widget.Button', 'resource-id': 'addShoppingListButton', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Description', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'event_type': 'gui', 'score': 0.32553576098548037, 'action': ['click']}
+{'class': 'android.widget.TextView', 'resource-id': 'shoppingListNameTextView', 'id-prefix': 'pl.com.andrzejgrzyb.shoppinglist:id/', 'text': 'item1', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'event_type': 'oracle', 'score': 0.4249122502903144, 'action': ['wait_until_element_presence', 10, 'xpath', '//android.widget.TextView[@text="item1"]']}
+Transfer time in sec: 3358.345534801483
+Start testing learned actions
+Testing time in sec: 44.53650212287903
+     3408.26 real         7.39 user         0.72 sys

@@ -1,0 +1,72 @@
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-04 10:18:48.164400
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+Traceback (most recent call last):
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x128a0b358>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /w2v (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x128a0b358>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Explorer.py", line 615, in <module>
+    is_done, failed_step = explorer.run()
+  File "Explorer.py", line 147, in run
+    self.config.cross_check)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/WidgetUtil.py", line 523, in most_similar
+    score = WidgetUtil.weighted_sim(w, src_event, use_stopwords, cross_check) if need_evaluate else None
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/WidgetUtil.py", line 332, in weighted_sim
+    sim = StrUtil.w2v_sent_sim(s_new, s_old)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/StrUtil.py", line 163, in w2v_sent_sim
+    resp = requests.post(url='http://127.0.0.1:5000/w2v', data=data).json()
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/usiusi/Documents/Repositories/Craftdroid/code-release/venv2/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /w2v (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x128a0b358>: Failed to establish a new connection: [Errno 61] Connection refused',))

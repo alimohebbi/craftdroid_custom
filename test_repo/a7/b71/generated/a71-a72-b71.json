@@ -1,0 +1,70 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "me.writeily:id/note_extra",
+    "text": "Last modified: 6/1/2020, 3:06 PM",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "note",
+    "stepping_events": [],
+    "package": "me.writeily",
+    "activity": ".MainActivity",
+    "event_type": "gui",
+    "score": 0.43491505707303685,
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "me.writeily:id/edit_note_title",
+    "text": "note",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "stepping_events": [],
+    "package": "me.writeily",
+    "activity": ".NoteActivity",
+    "event_type": "gui",
+    "score": 0.2587802180399497,
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "Title1"
+    ]
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "EMPTY_EVENT",
+    "score": 0,
+    "event_type": "gui"
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "me.writeily:id/keyboard_shortcut",
+    "text": "_",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "-",
+    "stepping_events": [],
+    "package": "me.writeily",
+    "activity": ".NoteActivity",
+    "event_type": "gui",
+    "score": 0.11365605580310027,
+    "action": [
+      "click"
+    ]
+  }
+]

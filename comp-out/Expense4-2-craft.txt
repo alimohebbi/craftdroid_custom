@@ -1,0 +1,479 @@
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-08 13:09:10.944876
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/btn_add_income', 'text': 'Add income', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'resource-id': 'fab', 'class': 'android.widget.ImageButton', 'oId': '2131689599', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'text': '', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.22990833678179315, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+Adding edge: from luankevinferreira.expenses.MainActivity: void onCreate(android.os.Bundle) to luankevinferreira.expenses.ExpenseActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text= (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.MainActivity. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity', 'event_type': 'gui', 'score': 0.13996347164114317, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_price', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Price', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', '1500']}
+Adding edge: from luankevinferreira.expenses.ExpenseActivity: void onCreate(android.os.Bundle) to luankevinferreira.expenses.MainActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=Navigate up&class=android.widget.ImageButton&resource-id=&naf=&text= (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(3/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'save_expense', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(4/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'date_picker', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '06-08-2020', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(6/10) Validating Similar w: {'resource-id': 'total_month', 'text': 'Large Text', 'class': 'android.widget.Button', 'oId': '2131689601', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(7/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'total_month', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total of month expenses', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_title', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Title', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'GRA']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_category', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Category', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'General']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(3/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'save_expense', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(4/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'date_picker', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '06-08-2020', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(6/10) Validating Similar w: {'resource-id': 'total_month', 'text': 'Large Text', 'class': 'android.widget.Button', 'oId': '2131689601', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(7/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'total_month', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total of month expenses', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/tv_title', 'text': 'GRA', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'GRA']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_month_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Total of month expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+Empty event for an oracle. Try to explore the app
+Adding edge: from luankevinferreira.expenses.MainActivity: void onCreate(android.os.Bundle) to luankevinferreira.expenses.HistoryActivity: void onCreate(android.os.Bundle)
+label is: D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00 (onClick)
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/tv_title', 'text': 'GRA', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'GRA']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_month_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Total of month expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_history', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(6/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Total', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses history', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.026419414887352593:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.22990833678179315, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity', 'event_type': 'gui', 'score': 0.13996347164114317, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-08 13:28:47.490502
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/btn_add_income', 'text': 'Add income', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.22990833678179315, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.ExpenseActivity', 'D@content-desc=Navigate up&class=android.widget.ImageButton&resource-id=&naf=&text=', 'luankevinferreira.expenses.MainActivity']
+D@criteria: {'content-desc': 'Navigate up', 'class': 'android.widget.ImageButton', 'resource-id': '', 'naf': '', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.ExpenseActivity', 'D@content-desc=Navigate up&class=android.widget.ImageButton&resource-id=&naf=&text=', 'luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': 'Navigate up', 'class': 'android.widget.ImageButton', 'resource-id': '', 'naf': '', 'text': ''}
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(3/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'next_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Next', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'June', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.ExpenseActivity', 'D@content-desc=Navigate up&class=android.widget.ImageButton&resource-id=&naf=&text=', 'luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': 'Navigate up', 'class': 'android.widget.ImageButton', 'resource-id': '', 'naf': '', 'text': ''}
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(4/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'prev_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Previous', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.ExpenseActivity', 'D@content-desc=Navigate up&class=android.widget.ImageButton&resource-id=&naf=&text=', 'luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': 'Navigate up', 'class': 'android.widget.ImageButton', 'resource-id': '', 'naf': '', 'text': ''}
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(5/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.ExpenseActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity', 'event_type': 'gui', 'score': 0.13996347164114317, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_price', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Price', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', '1500']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(3/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'next_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Next', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'June', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(4/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'prev_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Previous', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(5/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(6/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'save_expense', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'date_picker', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '06-08-2020', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(8/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(9/10) Validating Similar w: {'resource-id': 'total_month', 'text': 'Large Text', 'class': 'android.widget.Button', 'oId': '2131689601', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(10/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'total_month', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total of month expenses', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_title', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Title', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'GRA']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/et_category', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': 'Category', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'General']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/action_done', 'text': '', 'content-desc': 'Add', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.AddRecordActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(3/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'next_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Next', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'June', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(4/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': 'prev_button', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': 'Previous', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(5/10) Validating Similar w: {'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(6/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'save_expense', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'date_picker', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '06-08-2020', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(8/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(9/10) Validating Similar w: {'resource-id': 'total_month', 'text': 'Large Text', 'class': 'android.widget.Button', 'oId': '2131689601', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(10/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'total_month', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total of month expenses', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/tv_title', 'text': 'GRA', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'GRA']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_month_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Total of month expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_history', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(6/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Total', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses history', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+Empty event for an oracle. Try to explore the app
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'com.blogspot.e_kanivets.moneytracker:id/tv_title', 'text': 'GRA', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a64', 'package': 'com.blogspot.e_kanivets.moneytracker', 'activity': '.activity.record.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'GRA']}
+(1/10) Validating Similar w: {'resource-id': 'total_month_description', 'text': 'Total de gastos do mês', 'class': 'android.widget.TextView', 'oId': '2131689600', 'layout_name': 'activity_main', 'layout_oId': '2130968604', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'method': 'onCreate', 'content-desc': ''}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_month_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Total of month expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.MainActivity. 1 paths to validate.
+Validating path:  []
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_description', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': 'Add a description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'total_history', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '$0.00', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Total', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(6/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'expense_value', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'text1', 'id-prefix': 'android:id/', 'text': 'Food', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Total', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.ExpenseActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.ImageButton&resource-id=fab&naf=true&text=', 'luankevinferreira.expenses.ExpenseActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'naf': 'true', 'text': ''}
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': '', 'id-prefix': '', 'text': 'Expenses history', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'luankevinferreira.expenses', 'activity': '.HistoryActivity'}
+Activity transition: luankevinferreira.expenses.MainActivity -> luankevinferreira.expenses.HistoryActivity. 1 paths to validate.
+Validating path:  ['luankevinferreira.expenses.MainActivity', 'D@content-desc=&class=android.widget.Button&resource-id=total_month&naf=&text=$0.00', 'luankevinferreira.expenses.HistoryActivity']
+D@criteria: {'content-desc': '', 'class': 'android.widget.Button', 'resource-id': 'total_month', 'naf': '', 'text': '$0.00'}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.026419414887352593:
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.22990833678179315, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity', 'event_type': 'gui', 'score': 0.13996347164114317, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+Finished. Learned actions
+{'class': 'android.widget.ImageButton', 'resource-id': 'fab', 'id-prefix': 'luankevinferreira.expenses:id/', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.MainActivity', 'event_type': 'gui', 'score': 0.22990833678179315, 'action': ['click']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'Navigate up', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'luankevinferreira.expenses', 'activity': '.ExpenseActivity', 'event_type': 'gui', 'score': 0.13996347164114317, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+Transfer time in sec: 2589.983316421509
+Start testing learned actions
+Testing time in sec: 24.88782501220703

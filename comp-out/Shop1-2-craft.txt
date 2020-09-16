@@ -1,0 +1,962 @@
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 20:23:36.774552
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+Adding self-loop: br.com.activitybr.com.vansact.MainApp: void onCreate(android.os.Bundle), label: D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView (onClick)
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/addShoppingListButton', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Weekly grocery shopping', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 2 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+(2/10) Validating Similar w: {'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 2 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.07761140664418538, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+Adding self-loop: br.com.activitybr.com.vansact.MainApp: void onCreate(android.os.Bundle), label: D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 3 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 3 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 3 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 3 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 3 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Empty event for an oracle. Try to explore the app
+Adding self-loop: br.com.activitybr.com.vansact.MainApp: void onCreate(android.os.Bundle), label: D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton (onClick)
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Delete all', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.033391917745272316:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.07761140664418538, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 20:45:17.211912
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/addShoppingListButton', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Weekly grocery shopping', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.12751868863900503, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Delete all', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Empty event for an oracle. Try to explore the app
+Adding edge: from br.com.activitybr.com.vansact.MainApp: void onCreate(android.os.Bundle) to br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle)
+label is: D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button (onClick)
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Delete all', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.MainApp']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(9/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'header_description_collumn', 'id-prefix': 'br.com.activity:id/', 'text': 'No item was added', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.03963032799462478:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'gui'}
+{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button2', 'id-prefix': 'android:id/', 'text': 'Cancel', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.12751868863900503, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 21:20:15.302601
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.1670586932450533, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 1 paths to validate.
+Validating path:  []
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 1 paths to validate.
+Validating path:  []
+Duplicated match. Backtrack to src_idx: 1 to find another match
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Duplicated match (later): {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.1670586932450533}
+. Skipped.
+(3/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edQuantity', 'id-prefix': 'br.com.activity:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 4 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'edQuantity', 'id-prefix': 'br.com.activity:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.13424282458921274, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/addShoppingListButton', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Weekly grocery shopping', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'header_description_collumn', 'id-prefix': 'br.com.activity:id/', 'text': 'No item was added', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 1 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'header_description_collumn', 'id-prefix': 'br.com.activity:id/', 'text': 'No item was added', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16098468378186226, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+Adding self-loop: br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle), label: D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 2 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+(3/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 2 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Delete all', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+Empty event for an oracle. Try to explore the app
+Adding self-loop: br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle), label: D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView (onClick)
+Adding self-loop: br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle), label: D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView (onClick)
+Adding self-loop: br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle), label: D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton (onClick)
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(5/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Delete all', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.08896812757787606:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'edQuantity', 'id-prefix': 'br.com.activity:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.13424282458921274, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+{'class': 'android.widget.TextView', 'resource-id': 'header_description_collumn', 'id-prefix': 'br.com.activity:id/', 'text': 'No item was added', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16098468378186226, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 21:45:15.807452
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}, {'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.18379496493273315, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/addShoppingListButton', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Weekly grocery shopping', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'qtItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'unitValueItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'US$ 0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16543304671843848, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+Adding edge: from br.com.activitybr.com.vansact.AddItemShoppingList: void onCreate(android.os.Bundle) to androidcom.android.internal.app.ChooserActivity: void onCreate(android.os.Bundle)
+label is: D@naf=&text=Share&content-desc=&resource-id=title&class=android.widget.TextView (onClick)
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(5/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+Empty event for an oracle. Try to explore the app
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(5/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.09571819048788813:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}, {'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.18379496493273315, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16543304671843848, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Start a new round to find a better tgt event sequence
+Timestamp: 2020-06-01 22:05:34.016945
+Source Event:
+{'class': 'android.widget.ImageButton', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/fab', 'text': '', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': 'true', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.MainApp. 4 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameEditText', 'text': 'Shopping list name', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=New list&resource-id=action_add&class=android.widget.TextView', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'New list', 'resource-id': 'action_add', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=Cancel&content-desc=&resource-id=button2&class=android.widget.Button', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'Cancel', 'content-desc': '', 'resource-id': 'button2', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.MainApp -> br.com.activitybr.com.vansact.AddItemShoppingList. 8 paths to validate.
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.MainApp', 'D@naf=&text=OK&content-desc=&resource-id=button1&class=android.widget.Button', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'OK', 'content-desc': '', 'resource-id': 'button1', 'class': 'android.widget.Button'}
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+** Learned for this step:
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}, {'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.18379496493273315, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+--
+Source Event:
+{'class': 'android.widget.EditText', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListDescriptionEditText', 'text': 'Description', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Grocery', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+(1/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+** Learned for this step:
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+--
+Source Event:
+{'class': 'android.widget.Button', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/addShoppingListButton', 'text': 'Save', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Weekly grocery shopping', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.ShoppingListEditActivity', 'ignorable': 'false', 'event_type': 'gui', 'action': ['click']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(2/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'qtItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': '0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'unitValueItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'US$ 0.00', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+(4/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: br.com.activitybr.com.vansact.AddItemShoppingList -> br.com.activitybr.com.vansact.AddItemShoppingList. 5 paths to validate.
+Validating path:  []
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=No item was added&content-desc=&resource-id=header_description_collumn&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': 'No item was added', 'content-desc': '', 'resource-id': 'header_description_collumn', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Add item&resource-id=action_done&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Add item', 'resource-id': 'action_done', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=Search&resource-id=search&class=android.widget.TextView', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'Search', 'resource-id': 'search', 'class': 'android.widget.TextView'}
+Validating path:  ['br.com.activitybr.com.vansact.AddItemShoppingList', 'D@naf=&text=&content-desc=More options&resource-id=&class=android.widget.ImageButton', 'br.com.activitybr.com.vansact.AddItemShoppingList']
+D@criteria: {'naf': '', 'text': '', 'content-desc': 'More options', 'resource-id': '', 'class': 'android.widget.ImageButton'}
+** Learned for this step:
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16543304671843848, 'action': ['click']}
+--
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(5/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+Empty event for an oracle. Try to explore the app
+Source Event:
+{'class': 'android.widget.TextView', 'resource-id': 'pl.com.andrzejgrzyb.shoppinglist:id/shoppingListNameTextView', 'text': 'Grocery', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'tid': 'a91', 'package': 'pl.com.andrzejgrzyb.shoppinglist', 'activity': '.MainActivity', 'ignorable': 'false', 'event_type': 'oracle', 'action': ['wait_until_text_presence', 10, 'text', 'Grocery']}
+(1/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'descriptionItemShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(2/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(3/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'nameShoppingList', 'id-prefix': 'br.com.activity:id/', 'text': 'Add a new list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(4/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Grocery', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(5/10) Validating Similar w: {'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Weekly grocery shopping', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.AddItemShoppingList. 0 paths to validate.
+(6/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'message', 'id-prefix': 'android:id/', 'text': 'New shopping list', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(7/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'action_bar_title', 'id-prefix': 'android:id/', 'text': 'Shopping List', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(8/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Software update', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(9/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'alertTitle', 'id-prefix': 'android:id/', 'text': 'Save?', 'content-desc': '', 'clickable': 'false', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+(10/10) Validating Similar w: {'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Settings', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp'}
+Activity transition: androidcom.android.internal.app.ChooserActivity -> br.com.activitybr.com.vansact.MainApp. 0 paths to validate.
+** Learned for this step:
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+--
+Current target events with fitness 0.09571819048788813:
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}, {'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.18379496493273315, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16543304671843848, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+Finished. Learned actions
+{'class': 'android.widget.TextView', 'resource-id': 'action_add', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'New list', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.MainApp', 'event_type': 'gui', 'score': 0.18952393531799316, 'action': ['click']}
+{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.EditText', 'resource-id': 'search_src_text', 'id-prefix': 'android:id/', 'text': '   Pesquisar', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.Button', 'resource-id': 'button1', 'id-prefix': 'android:id/', 'text': 'OK', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': 'Cancel', 'action': ['click'], 'activity': 'br.com.vansact.MainApp', 'package': 'br.com.activity', 'event_type': 'stepping'}, {'class': 'android.widget.TextView', 'resource-id': 'search', 'id-prefix': 'br.com.activity:id/', 'text': '', 'content-desc': 'Search', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.18379496493273315, 'action': ['send_keys_and_hide_keyboard', 'Grocery']}
+{'class': 'android.widget.EditText', 'resource-id': 'edDescription', 'id-prefix': 'br.com.activity:id/', 'text': 'Add an item', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.22699357693394026, 'action': ['send_keys_and_hide_keyboard', 'Weekly grocery shopping']}
+{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}
+{'class': 'android.widget.TextView', 'resource-id': 'title', 'id-prefix': 'android:id/', 'text': 'Share', 'content-desc': '', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'stepping_events': [{'class': 'android.widget.ImageButton', 'resource-id': '', 'id-prefix': '', 'text': '', 'content-desc': 'More options', 'clickable': 'true', 'password': 'false', 'naf': '', 'parent_text': '', 'sibling_text': '', 'action': ['click'], 'activity': 'br.com.vansact.AddItemShoppingList', 'package': 'br.com.activity', 'event_type': 'stepping'}], 'package': 'br.com.activity', 'activity': 'br.com.vansact.AddItemShoppingList', 'event_type': 'gui', 'score': 0.16543304671843848, 'action': ['click']}
+{'class': 'EMPTY_EVENT', 'score': 0, 'event_type': 'oracle'}
+Transfer time in sec: 7440.0566918849945
+Start testing learned actions
+Testing time in sec: 35.116496086120605
+     7481.56 real        14.24 user         1.05 sys

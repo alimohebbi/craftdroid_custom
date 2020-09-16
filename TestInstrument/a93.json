@@ -1,0 +1,101 @@
+[
+  {
+    "class": "android.widget.Button",
+    "resource-id": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist:id/btn_skip",
+    "text": "Skip",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a93",
+    "package": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist",
+    "activity": ".ui.tutorial.TutorialActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist:id/fab_new_list",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a93",
+    "package": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist",
+    "activity": ".ui.main.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist:id/list_name",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "Shopping List Name",
+    "sibling_text": "",
+    "tid": "a93",
+    "package": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist",
+    "activity": ".ui.main.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "Grocery"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "android:id/button1",
+    "text": "Okay",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Cancel",
+    "tid": "a93",
+    "package": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist",
+    "activity": ".ui.main.MainActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "",
+    "text": "Grocery",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a93",
+    "package": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist",
+    "activity": ".ui.products.ProductsActivity",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.TextView[@text=\"Grocery\"]"
+    ]
+  }
+]

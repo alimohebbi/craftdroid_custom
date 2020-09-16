@@ -1,0 +1,82 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "br.com.activity:id/action_add",
+    "text": "",
+    "content-desc": "New list",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a64",
+    "package": "br.com.activity",
+    "activity": "br.com.vansact.MainApp",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a64",
+    "package": "br.com.activity",
+    "activity": "br.com.vansact.MainApp",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "list"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "android:id/button1",
+    "text": "OK",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Cancel",
+    "tid": "a64",
+    "package": "br.com.activity",
+    "activity": "br.com.vansact.MainApp",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "android:id/action_bar_title",
+    "text": "list",
+    "content-desc": "",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a64",
+    "package": "br.com.activity",
+    "activity": "br.com.vansact.AddItemShoppingList",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_text_presence",
+      10,
+      "text",
+      "list"
+    ]
+  }
+]

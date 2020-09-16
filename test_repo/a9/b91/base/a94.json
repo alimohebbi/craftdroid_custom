@@ -1,0 +1,216 @@
+[
+  {
+    "class": "android.widget.ImageButton",
+    "resource-id": "",
+    "text": "",
+    "content-desc": "More options",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "android:id/title",
+    "text": "New list",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "org.openintents.shopping:id/edittext",
+    "text": "e.g. wishlist, family list",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "list1"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "android:id/button1",
+    "text": "OK",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "Cancel",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Spinner",
+    "resource-id": "org.openintents.shopping:id/spinner_listfilter",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.CheckedTextView",
+    "resource-id": "android:id/text1",
+    "text": "list1",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "org.openintents.shopping:id/button_add_item",
+    "text": "Add",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "org.openintents.shopping:id/button1",
+    "text": "OK",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ui.PickItemsActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "org.openintents.shopping:id/autocomplete_add_item",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "item1"
+    ]
+  },
+  {
+    "class": "android.widget.Button",
+    "resource-id": "org.openintents.shopping:id/button_add_item",
+    "text": "Add",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "item1",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "org.openintents.shopping:id/name",
+    "text": "item1",
+    "content-desc": "",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a94",
+    "package": "org.openintents.shopping",
+    "activity": ".ShoppingActivity",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_element_presence",
+      10,
+      "xpath",
+      "//android.widget.TextView[@text=\"item1\"]"
+    ]
+  }
+]
