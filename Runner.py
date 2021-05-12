@@ -31,7 +31,8 @@ class Runner:
             'appPackage': app_name,
             'appActivity': app_activity,
             'autoGrantPermissions': True,
-            'noReset': no_reset
+            'noReset': no_reset,
+            "newCommandTimeout": 5000
         }
         # if udid:
         #     caps['udid'] = udid
