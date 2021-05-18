@@ -1,0 +1,130 @@
+{
+    "partial_loading": {
+        "activity_indicator": "progress_spinner_etsy"
+    },
+    "footer_local_market_disclaimer": {
+        "powered_by_foursquare": "logo_foursquare"
+    },
+    "list_item_loading": {
+        "loading_indicator": "progress_spinner_etsy"
+    },
+    "shop_header": {
+        "heart_image": "ic_favorited_selector",
+        "header_contact_button": "ic_blue_contact_selector"
+    },
+    "fragment_social_share_listing_header_item": {
+        "btn_fav": "ic_favorited_selected"
+    },
+    "loading_with_description": {
+        "activity_indicator": "progress_spinner_etsy"
+    },
+    "list_item_card_view_message": {
+        "image": "empty_generic"
+    },
+    "shop_share_annotation": {
+        "annotation": "ic_shop_share_annotation"
+    },
+    "q_popover": {
+        "btnCancel": "ic_clear_black_24dp"
+    },
+    "endless_footer": {
+        "activity_indicator": "progress_spinner_etsy"
+    },
+    "partial_twopane_arrow_view": {
+        "img_floating_tpane_arrow": "ic_tpane_arrow"
+    },
+    "activity_bughunt": {
+        "fab_bug": "ic_bug"
+    },
+    "fragment_swiper_permanently_denied_dialog": {
+        "image_background": "sk_white"
+    },
+    "list_item_card_view_banner_full_bleed": {
+        "image_full_bleed_left": "social_content_creator_banner_left_icon",
+        "image_full_bleed_right": "social_content_creator_banner_right_icon"
+    },
+    "fragment_cart_variation_select": {
+        "loading_view": "progress_spinner_etsy"
+    },
+    "listing_panel_price_contact": {
+        "price_loading_indicator": "progress_spinner_etsy"
+    },
+    "com_facebook_tooltip_bubble": {
+        "com_facebook_button_xout": "com_facebook_tooltip_blue_xout",
+        "com_facebook_tooltip_bubble_view_top_pointer": "com_facebook_tooltip_blue_topnub",
+        "com_facebook_tooltip_bubble_view_bottom_pointer": "com_facebook_tooltip_blue_bottomnub"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "listing_panel_shipping": {
+        "paypal_payments": "cc_paypal"
+    },
+    "partial_loading_local_browse": {
+        "activity_indicator": "progress_spinner_etsy"
+    },
+    "fragment_webview": {
+        "activity_indicator": "progress_spinner_etsy"
+    },
+    "fragment_signin_nag": {
+        "login_progress": "progress_spinner_etsy"
+    },
+    "fragment_share_feedback_dialog": {
+        "share_feedback_photo": "image_default_preview",
+        "share_feedback_shop_avatar": "default_avatar_75px"
+    },
+    "convo_new_header": {
+        "btn_send": "ic_menu_send_selector"
+    },
+    "view_cart_message_bubble": {
+        "pointer": "cart_message_bubble_pointer"
+    },
+    "partial_new_search_empty_results": {
+        "empty_image": "error_sorry_girl"
+    },
+    "layout_search_taxonomy_list": {
+        "loading_indicator": "progress_spinner_etsy",
+        "error_view": "error_sorry_girl"
+    },
+    "view_payment_methods": {
+        "icon_visa": "cc_visa",
+        "icon_mastercard": "cc_mastercard",
+        "icon_amex": "cc_amex",
+        "icon_discover": "cc_discover",
+        "icon_paypal": "cc_paypal",
+        "icon_giftcard": "cc_gift_card"
+    },
+    "fragment_local_browse_homescreen": {
+        "placeholder": "bg_store"
+    },
+    "shop_overlap_header": {
+        "heart_image": "ic_favorite_selector"
+    },
+    "list_item_msco_cart_thank_you_group": {
+        "btn_divider": "divider_grey"
+    },
+    "machine_translation_one_click": {
+        "loading_translation_spinner": "progress_spinner_etsy"
+    },
+    "fragment_listing_redesign": {
+        "button_favorite_listing": "ic_favorite_selector",
+        "button_lists": "ic_listing_lists"
+    },
+    "search_suggestion_item": {
+        "edit_query": "abc_ic_commit_search_api_mtrl_alpha"
+    },
+    "fragment_leave_review2": {
+        "button_add_image": "btn_blue_v2",
+        "example_appreciation_photo_1": "ic_appreciation_photo_1",
+        "example_appreciation_photo_2": "ic_appreciation_photo_2",
+        "example_appreciation_photo_3": "ic_appreciation_photo_3",
+        "example_appreciation_photo_4": "ic_appreciation_photo_4",
+        "example_appreciation_photo_5": "ic_appreciation_photo_5"
+    },
+    "fragment_bughunt_compose": {
+        "loading_indicator": "progress_spinner_etsy"
+    },
+    "item_conversation": {
+        "convo_has_attachment": "ic_attachments"
+    }
+}

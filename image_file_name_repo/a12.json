@@ -1,0 +1,53 @@
+{
+    "adv_show_dialog": {
+        "cancel": "adv_close"
+    },
+    "appwall_child_layout": {
+        "appwall_item_new": "new_image"
+    },
+    "dialog_appwall_display": {
+        "appwall_image": "gift_default_icon"
+    },
+    "activity_gift_display": {
+        "gift_display_close": "gift_close",
+        "gift_display_icon": "gift_default_icon"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "activity_gift": {
+        "gift_loading": "appwall_downloadbar"
+    },
+    "layout_flip_button": {
+        "flip_up": "flip_up",
+        "flip_down": "flip_down"
+    },
+    "deck_child_view_header": {
+        "dismiss_task": "tab_close"
+    },
+    "appwall_icon_view": {
+        "iv_des_icon": "app_wall"
+    },
+    "home_page_display": {
+        "btn_facebook": "homepage_facebook",
+        "btn_youtube": "homepage_youtube",
+        "btn_twitter": "homepage_twitter"
+    },
+    "item_theme": {
+        "item_select": "ic_theme_select"
+    },
+    "adv_rate_gift_item": {
+        "adv_gift_icon": "gift_default_icon",
+        "adv_gift_new": "new_image"
+    },
+    "activity_main": {
+        "recover_menu": "ic_recover_menu"
+    },
+    "dialog_appwall": {
+        "appwall_image": "gift_default_icon"
+    },
+    "gift_list_view_item": {
+        "iv_gift_icon": "gift_default_icon",
+        "new_image": "new_image"
+    }
+}

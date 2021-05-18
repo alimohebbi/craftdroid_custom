@@ -1,0 +1,111 @@
+{
+    "base_product_feed_fragment": {
+        "base_product_feed_fragment_invite_coupon_button": "giftbox_plain"
+    },
+    "onfido_fragment_document_selection": {
+        "passportArrow": "onfido_arrow_right_grey",
+        "licenseArrow": "onfido_arrow_right_grey",
+        "idArrow": "onfido_arrow_right_grey",
+        "permitArrow": "onfido_arrow_right_grey"
+    },
+    "bottom_navigation_view": {
+        "bottom_nav_browse_icon": "bottom_nav_browse",
+        "bottom_nav_search_icon": "bottom_nav_search",
+        "bottom_nav_cart_icon": "bottom_nav_cart",
+        "bottom_nav_cart_badge": "bottom_nav_cart_badge",
+        "bottom_nav_more_icon": "bottom_nav_more",
+        "bottom_nav_more_badge": "bottom_nav_cart_badge"
+    },
+    "onfido_post_capture_bubble": {
+        "bubbleArrow": "onfido_post_capture_bubble_arrow",
+        "warningIcon": "onfido_error_red",
+        "firstBullet": "onfido_circle",
+        "secondBullet": "onfido_circle"
+    },
+    "photo_video_viewer_grid_item": {
+        "photo_video_viewer_grid_item_video_icon": "play"
+    },
+    "merchant_cell": {
+        "merchant_image_view": "merchant_profile"
+    },
+    "merchant_feed_tab_banner_view": {
+        "merchant_banner_image": "merchant_banner_icon"
+    },
+    "image_viewer_fragment": {
+        "fragment_product_photos_uploader_thanks_icon": "thanks_icon"
+    },
+    "onfido_fragment_bulleted_message": {
+        "timerIcon": "onfido_timer"
+    },
+    "product_details_recent_videos_horizontal_list_view_item": {
+        "product_details_horizontal_list_view_item_video_icon": "play"
+    },
+    "onfido_auto_capture_info_layout": {
+        "icon": "onfido_camera_icon"
+    },
+    "com_facebook_tooltip_bubble": {
+        "com_facebook_button_xout": "com_facebook_tooltip_blue_xout",
+        "com_facebook_tooltip_bubble_view_top_pointer": "com_facebook_tooltip_blue_topnub",
+        "com_facebook_tooltip_bubble_view_bottom_pointer": "com_facebook_tooltip_blue_bottomnub"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "browser_address_field": {
+        "lockIcon": "lock"
+    },
+    "wish_partner_event_item_view": {
+        "wish_partner_event_main_image": "promocode_background"
+    },
+    "layout_focus_marker": {
+        "fill": "focus_marker_fill"
+    },
+    "daily_raffle_header": {
+        "daily_raffle_header_status_giftbox_icon": "status_giftbox"
+    },
+    "invite_coupon_view": {
+        "invite_coupon_view_image": "invite_coupon_giftbox"
+    },
+    "product_variant_text_swatch": {
+        "base_swatch_wish_express_icon": "wish_express_icon"
+    },
+    "gift_pack_feed_small_header_view": {
+        "gift_pack_small_header_lock": "white_lock_10x13"
+    },
+    "referral_program_fragment": {
+        "referral_program_coupon_share_button": "share_14x16"
+    },
+    "shaky_single_row": {
+        "shaky_row_icon": "ic_lightbulb_outline_black_48dp"
+    },
+    "wish_partner_info_fragment": {
+        "wish_partner_coupon_share_button": "share_14x16"
+    },
+    "daily_giveaway_status_box": {
+        "daily_giveaway_status_box_claimed_image": "app_logo"
+    },
+    "ugc_feedback_dialog_header": {
+        "ugc_feedback_left_sparkle": "ugc_leftsparkle",
+        "ugc_feedback_right_sparkle": "ugc_rightsparkle"
+    },
+    "product_variant_color_swatch": {
+        "base_swatch_wish_express_icon": "wish_express_icon"
+    },
+    "browser_base_bar": {
+        "backIcon": "back",
+        "forwardIcon": "forward"
+    },
+    "onfido_activity_capture": {
+        "bt_capture": "onfido_button_take_picture",
+        "passportOverlay": "onfido_passport_overlay"
+    },
+    "price_chop_detail_view": {
+        "price_chop_detail_chicken": "price_chopper_details_axe"
+    },
+    "browser_top_bar": {
+        "closeIcon": "close"
+    },
+    "profile_fragment_my_wishlist_row": {
+        "fragment_wishlist_menu_button": "profile_more_icon"
+    }
+}

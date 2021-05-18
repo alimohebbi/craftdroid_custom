@@ -1,0 +1,4 @@
+#model_dir: "/home/amohebbi/models/"
+apks_dir: "/Users/usiusi/Documents/Repositories/Craftdroid/subject_apps"
+decompile_temp: '/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/apk_decompiled_temp'
+image_repo: '/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/image_file_name_repo'

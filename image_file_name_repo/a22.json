@@ -1,0 +1,17 @@
+{
+    "notification_media_cancel_action": {
+        "cancel_action": "abc_ic_clear_mtrl_alpha"
+    },
+    "thing_list_item": {
+        "thumb_up": "ic_thumb_up_white"
+    },
+    "input_panel": {
+        "reminder_del": "ic_close"
+    },
+    "detail_activity": {
+        "reminder_del": "ic_close"
+    },
+    "abc_action_mode_close_item_material": {
+        "action_mode_close_button": "?actionModeCloseDrawable"
+    }
+}

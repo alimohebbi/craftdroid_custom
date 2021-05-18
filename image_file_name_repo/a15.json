@@ -1,0 +1,36 @@
+{
+    "menu_blocking_switch": {
+        "help_trackers": "ic_info"
+    },
+    "item_custom_domain": {
+        "handleView": "ic_reorder"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "toolbar": {
+        "menuView": "ic_menu"
+    },
+    "item_indicator_menu_button": {
+        "dot": "highlight_dot"
+    },
+    "find_in_page": {
+        "previousResult": "ic_arrowhead_up",
+        "nextResult": "ic_arrowhead_down",
+        "close_find_in_page": "ic_close"
+    },
+    "fragment_urlinput": {
+        "clearView": "ic_clear"
+    },
+    "fragment_browser": {
+        "erase": "ic_delete"
+    },
+    "menu_whatsnew": {
+        "dot": "highlight_dot"
+    },
+    "menu_navigation": {
+        "forward": "ic_forward",
+        "refresh": "ic_refresh",
+        "stop": "ic_stop"
+    }
+}

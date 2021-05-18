@@ -11,7 +11,7 @@ class WidgetUtil:
     # NAF means "Not Accessibility Friendly", e.g., a back button without any textual info like content-desc
     FEATURE_KEYS = ['class', 'resource-id', 'text', 'content-desc', 'clickable', 'password', 'naf']
     ALL_FEATURE_KEYS = ["bounds", "checkable", "checked", "enabled", "height",
-                        "index", "long-clickable", "package",  "scrollable", "selected",
+                        "index", "long-clickable", "package", "scrollable", "selected",
                         "width", "x1", "x2", "y1", "y2"]
     ALL_FEATURE_KEYS.extend(FEATURE_KEYS)
     WIDGET_CLASSES = ['android.widget.EditText', 'android.widget.MultiAutoCompleteTextView', 'android.widget.TextView',
@@ -20,6 +20,7 @@ class WidgetUtil:
                       "com.google.android.material.textfield.TextInputLayout",
                       'android.support.design.widget.TextInputLayout']
     state_to_widgets = {}  # for a gui state, there are "all_widgets": a list of all widgets, and
+    WIDGET_STATIC_CLASS = {"TextView", "DialogTitle", "ImageView", "IconTextView", "TextInputLayout"}
 
     # "most_similar_widgets": a dict for a source widget and the list of its most similar widgets and scores
 
@@ -226,7 +227,7 @@ class WidgetUtil:
 
     @staticmethod
     def weighted_sim(new_widget, old_widget, use_stopwords=True, cross_check=False):
-        match_object = MatchObject(old_widget, [new_widget])
+        match_object = MatchObject(old_widget, [new_widget], None)
         scored_indexes = send_object(match_object.get_json())
         return scored_indexes['0']
 
@@ -287,16 +288,54 @@ class WidgetUtil:
         soup = BeautifulSoup(dom, 'lxml')
         return cls.get_widget_from_soup_element(soup.find('', regex_cria))
 
+    @staticmethod
+    def separate_actionable_label(dynamic_widgets):
+        actionables = []
+        labels = []
+        for w in dynamic_widgets:
+            if WidgetUtil.has_static_class(w) and not WidgetUtil.is_clickable(w):
+                if WidgetUtil.has_text_or_content(w):
+                    labels.append(w)
+            else:
+                actionables.append(w)
+        return actionables, labels
+
+    @staticmethod
+    def has_static_class(w):
+        for i in WidgetUtil.WIDGET_STATIC_CLASS:
+            if w['class'].endswith(i):
+                return True
+        return False
+
+    @staticmethod
+    def is_clickable(w):
+        if w['clickable'] and w['clickable'] == 'true':
+            return True
+        if w['long-clickable'] and w['long-clickable'] == 'true':
+            return True
+        if w['checkable'] and w['checkable'] == 'true':
+            return True
+        return False
+
     @classmethod
     def most_similar(cls, src_event, widgets, use_stopwords=True, expand_btn_to_text=False, cross_check=False):
         w_list = list(widgets)
-        match_object = MatchObject(src_event, w_list)
-        scored_indexes = send_object(match_object.get_json())
-        similars = []
-        for k in scored_indexes:
-            similars.append((w_list[int(k)], scored_indexes[k]))
+        dynamic_widgets = MatchObject.get_dynamic_widgets(w_list)
+        actionable_widget, label_widgets = WidgetUtil.separate_actionable_label(dynamic_widgets)
+        static_widgets = MatchObject.get_static_widgets(w_list)
+        similars = WidgetUtil.score_widgets(src_event, actionable_widget, label_widgets)
+        similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None))
         similars.sort(key=lambda x: x[1], reverse=True)
         return similars
+
+    @staticmethod
+    def score_widgets(src_event, candidates, target_labels):
+        match_object = MatchObject(src_event, candidates, target_labels)
+        scored_indexes = send_object(match_object.get_json())
+        scored_widgets = []
+        for k in scored_indexes:
+            scored_widgets.append((candidates[int(k)], scored_indexes[k]))
+        return scored_widgets
 
     @classmethod
     def get_nearest_button(cls, dom, w):
@@ -307,3 +346,12 @@ class WidgetUtil:
             if all_btns and len(all_btns) > 0:
                 return cls.get_widget_from_soup_element(all_btns[0])
         return None
+
+    @staticmethod
+    def has_text_or_content(w):
+        if w['text'] and w['text'] != '':
+            return True
+        if w['content-desc'] and w['content-desc'] != '':
+            return True
+
+        return False

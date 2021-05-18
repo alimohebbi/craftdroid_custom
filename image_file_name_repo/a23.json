@@ -1,0 +1,32 @@
+{
+    "pin_dialog": {
+        "iv_pin_icon": "pin"
+    },
+    "nav_header": {
+        "imageView": "drawer_icon"
+    },
+    "fragment_todo_lists": {
+        "placeholder": "splash_screen",
+        "fab_new_list": "plus_white"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "widget_tasks": {
+        "widget_done": "done"
+    },
+    "calendar": {
+        "iv_prev_month": "arrow_left",
+        "iv_next_month": "arrow_right"
+    },
+    "fragment_todo_tasks": {
+        "fab_new_task": "plus_white"
+    },
+    "activity_main": {
+        "fab_new_task": "plus_white"
+    },
+    "activity_about": {
+        "barcodeLogo": "privacyfriendlyappslogo",
+        "imageView1": "secuso_logo_blau_blau"
+    }
+}

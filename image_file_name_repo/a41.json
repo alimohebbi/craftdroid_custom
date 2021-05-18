@@ -1,0 +1,60 @@
+{
+    "recipient_token_item": {
+        "contact_crypto_status_icon_simple": "ic_status_corner",
+        "contact_crypto_status_icon_simple_enabled": "ic_status_corner",
+        "contact_crypto_status_icon_simple_error": "ic_status_corner",
+        "contact_crypto_status_red": "status_dots_1",
+        "contact_crypto_status_orange": "status_dots_2",
+        "contact_crypto_status_green": "status_dots_3"
+    },
+    "message_list_widget_list_item": {
+        "attachment": "ic_email_attachment_small"
+    },
+    "message_list_widget_layout": {
+        "new_message": "ic_action_compose_dark"
+    },
+    "message_crypto_status_view": {
+        "crypto_status_dots_bg": "status_dots"
+    },
+    "message_view_attachment_locked": {
+        "lock_icon": "status_signature_unverified_cutout"
+    },
+    "recipient_alternate_item": {
+        "alternate_remove": "?iconActionCancel",
+        "alternate_crypto_status_simple": "status_lock"
+    },
+    "message_view_attachment": {
+        "attachment_icon": "attached_image_placeholder"
+    },
+    "message_compose_recipients": {
+        "crypto_special_inline": "compatibility",
+        "crypto_special_sign_only": "status_signature_verified_cutout",
+        "crypto_status_disabled": "status_lock_disabled",
+        "crypto_status_enabled": "status_lock",
+        "crypto_status_error": "status_lock_error",
+        "recipient_expander": "?iconActionExpand"
+    },
+    "foldable_linearlayout": {
+        "foldableIcon": "?iconActionExpand"
+    },
+    "message_list_item": {
+        "contact_badge": "ic_contact_picture"
+    },
+    "client_certificate_spinner": {
+        "client_certificate_spinner_delete": "?iconActionCancel"
+    },
+    "recipient_dropdown_item": {
+        "contact_crypto_status_icon_simple": "status_lock"
+    },
+    "crypto_mode_selector": {
+        "icon_disabled": "status_lock_disabled",
+        "icon_opportunistic": "status_lock_opportunistic",
+        "icon_private": "status_lock_closed"
+    },
+    "accounts_item": {
+        "folders": "?iconFolder"
+    },
+    "message_compose_attachment": {
+        "attachment_delete": "ic_delete"
+    }
+}

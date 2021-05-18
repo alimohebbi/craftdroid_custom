@@ -1,0 +1,25 @@
+{
+    "notification_media_cancel_action": {
+        "cancel_action": "abc_ic_clear_mtrl_alpha"
+    },
+    "list_item_view_future": {
+        "listItemReorderImageView": "ic_reorder_grey_600_18dp"
+    },
+    "activity_add_to_do": {
+        "userToDoReminderIconImageButton": "ic_add_alarm_grey_200_24dp",
+        "makeToDoFloatingActionButton": "ic_send_white_18dp"
+    },
+    "abc_action_mode_close_item_material": {
+        "action_mode_close_button": "?actionModeCloseDrawable"
+    },
+    "activity_main": {
+        "addToDoItemFAB": "ic_add_white_24dp"
+    },
+    "about_layout": {
+        "aboutImageView": "ic_launcher"
+    },
+    "activity_todo_test": {
+        "userToDoReminderIconImageButton": "ic_add_alarm_grey_200_24dp",
+        "makeToDoFloatingActionButton": "ic_send_white_18dp"
+    }
+}

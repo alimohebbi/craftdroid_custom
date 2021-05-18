@@ -1,0 +1,35 @@
+{
+    "create_bookmark_folder_dialog": {
+        "create_folder_default_icon": "folder_blue_bitmap"
+    },
+    "domains_coordinatorlayout": {
+        "add_domain_fab": "?addIcon"
+    },
+    "view_source_app_bar": {
+        "back_arrow": "back"
+    },
+    "url_app_bar": {
+        "favorite_icon": "world"
+    },
+    "edit_bookmark_folder_databaseview_dialog": {
+        "edit_folder_default_icon_imageview": "folder_blue_bitmap"
+    },
+    "edit_bookmark_folder_dialog": {
+        "edit_folder_default_icon_imageview": "folder_blue_bitmap"
+    },
+    "find_on_page_app_bar": {
+        "find_previous": "previous",
+        "find_next": "next",
+        "close_find": "close"
+    },
+    "bookmarks_databaseview_item_linearlayout": {
+        "bookmarks_databaseview_parent_folder_icon": "folder_gray"
+    },
+    "bookmarks_coordinatorlayout": {
+        "create_bookmark_folder_fab": "?addFolderIcon",
+        "create_bookmark_fab": "?addBookmarkIcon"
+    },
+    "about_tab_version": {
+        "about_version_icon": "privacy_browser"
+    }
+}

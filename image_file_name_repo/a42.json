@@ -1,0 +1,52 @@
+{
+    "bar_activity": {
+        "img_bar_settings": "back",
+        "img_bar_gift": "gift"
+    },
+    "message_view_attachment": {
+        "attachment_icon": "attached_image_placeholder"
+    },
+    "foldable_linearlayout": {
+        "foldableIcon": "?iconActionExpand"
+    },
+    "layout_notification_ads": {
+        "img_app_download": "close"
+    },
+    "place_autocomplete_fragment": {
+        "place_autocomplete_search_button": "places_ic_search",
+        "place_autocomplete_clear_button": "places_ic_clear"
+    },
+    "message_compose": {
+        "add_to": "?messageComposeAddContactImage",
+        "add_cc": "?messageComposeAddContactImage",
+        "add_bcc": "?messageComposeAddContactImage"
+    },
+    "message_list_item": {
+        "contact_badge": "ic_contact_picture"
+    },
+    "client_certificate_spinner": {
+        "client_certificate_spinner_delete": "?iconActionCancel"
+    },
+    "custom_layout_show_ads_app": {
+        "avatar_icon": "download",
+        "img_app_icon": "app_sphere_512",
+        "img_download": "download",
+        "img_app_download": "close"
+    },
+    "item_listview_layout": {
+        "img_app_download": "search2"
+    },
+    "message_view_openpgp_header": {
+        "result_encryption_icon": "status_lock_open",
+        "result_signature_icon": "status_signature_unverified_cutout"
+    },
+    "accounts_item": {
+        "folders": "?iconFolder"
+    },
+    "message_compose_attachment": {
+        "attachment_delete": "ic_delete"
+    },
+    "place_autocomplete_item_powered_by_google": {
+        "place_autocomplete_powered_by_google": "powered_by_google_light"
+    }
+}

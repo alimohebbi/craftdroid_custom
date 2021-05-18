@@ -1,0 +1,16 @@
+{
+    "fragment_shoppinglist": {
+        "fab_add": "ic_add_black_24dp",
+        "button_add_new_item": "ic_done_black_36dp"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "list_item": {
+        "drag_n_drop_handler": "ic_swap_vert_black_24dp"
+    },
+    "dialog_directory_chooser": {
+        "fab_add": "ic_add_black_24dp",
+        "button_choose_storage": "ic_sd_storage_black_24dp"
+    }
+}

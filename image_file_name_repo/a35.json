@@ -1,0 +1,662 @@
+{
+    "asg_business_passport": {
+        "business_bookmark_flag": "bookmark_24x24",
+        "business_compass": "location_arrow_18x18"
+    },
+    "panel_activity_feed_ynra": {
+        "ynra_business_photo": "biz_nophoto"
+    },
+    "rewards_search_banner": {
+        "banner_image": "rewards_search_banner",
+        "close_button": "close_24x24"
+    },
+    "activity_check_in_offer": {
+        "stamp_image": "offer_stamp"
+    },
+    "review_complete_view": {
+        "add_photo": "camera_24x24",
+        "edit_review": "pencil_24x24",
+        "sms_icon": "chat_24x24",
+        "messenger_icon": "facebook_messenger_24x24",
+        "whatsapp_icon": "whatsapp_24x24"
+    },
+    "like_count_header": {
+        "disclosure": "arrow_graphic"
+    },
+    "activity_biz_claim_success_open_the_app": {
+        "check_mark": "checkmark_badged_30x30",
+        "biz_app_icon": "bizapp_icon",
+        "ads_promo_icon": "money_promo"
+    },
+    "branded_section_header": {
+        "brand_logo": "ghlogo"
+    },
+    "panel_enrolled_credit_card": {
+        "primary_info": "info_outline_24x24"
+    },
+    "nav_panel_user_logged_out": {
+        "dino_cell": "dino_passport"
+    },
+    "fragment_select_nomination": {
+        "friend_photo": "darwin_portrait"
+    },
+    "panel_review_highlight": {
+        "arrow": "arrow_graphic"
+    },
+    "panel_tip_bubble_buttons": {
+        "compliment_button": "compliment_button_icon",
+        "like_button": "like_button_icon"
+    },
+    "panel_event_user": {
+        "business_disclosure": "arrow_graphic"
+    },
+    "fragment_video_page_ooyala": {
+        "play_icon": "video_play_96x96"
+    },
+    "regulars_component_layout": {
+        "drawable": "check_in_24x24",
+        "arrow": "arrow_graphic"
+    },
+    "elite_welcome_splash": {
+        "star_small": "star100",
+        "star_medium": "star40",
+        "star_big": "star50",
+        "envelope_back": "envelope_back"
+    },
+    "fragment_video_page_brightcove": {
+        "play_icon": "video_play_96x96"
+    },
+    "modern_ynra_design": {
+        "menu_icon": "overflow_18x18"
+    },
+    "war_convert_to_tip_bottom_sheet": {
+        "image": "short_review"
+    },
+    "search_bar": {
+        "search_text_icon": "search_24x24"
+    },
+    "activity_claim_guest_account": {
+        "icon_border": "starburst_background"
+    },
+    "category_row": {
+        "image_disclosure": "arrow_graphic"
+    },
+    "carousel_header": {
+        "overflow_menu_icon": "more_24x24",
+        "info_icon": "info_18x18"
+    },
+    "rewards_panel": {
+        "cashback_icon": "cash_back_24x24"
+    },
+    "activity_full_screen_award": {
+        "full_screen_award_starburst_background": "starburst_background",
+        "full_screen_award_icon": "reward_baron_baroness"
+    },
+    "featured_collections_carousel_item": {
+        "collection_small_photo_top": "biz_nophoto",
+        "collection_small_photo_bottom": "biz_nophoto"
+    },
+    "panel_biz_page_verified_license": {
+        "verified_license_badge": "verified_license_badge_70x70"
+    },
+    "panel_inbox": {
+        "status": "reply_18x18"
+    },
+    "popular_dishes_photo_thumbnail_frame": {
+        "image": "thumbnail_photo_frame"
+    },
+    "fragment_collections_onboarding": {
+        "error_image": "collections_error"
+    },
+    "activity_reservation_reconfirmation": {
+        "business_image": "biz_nophoto"
+    },
+    "activity_whats_cm": {
+        "whats_elite_button": "yelp_24x24"
+    },
+    "shimmer_placeholder_panel_business": {
+        "search_rating": "stars_regular_5"
+    },
+    "panel_bookmarks_cell": {
+        "direction": "multicompass"
+    },
+    "activity_order_status": {
+        "brand_logo": "ghlogo"
+    },
+    "panel_more_info_action": {
+        "disclosure": "arrow_graphic"
+    },
+    "edit_title_view": {
+        "edit": "pencil_24x24",
+        "discard": "close_24x24",
+        "accept": "checkmark_24x24"
+    },
+    "generic_carousel_item": {
+        "main_image": "biz_nophoto"
+    },
+    "fragment_generic_onboarding": {
+        "yelp_logo": "yelp_logo_outlined_large"
+    },
+    "dialog_privacy_policy": {
+        "top_image": "privacy_policy_top"
+    },
+    "ynra_grid_item": {
+        "menu_icon": "overflow_18x18"
+    },
+    "panel_find_friends_user_cell": {
+        "add_friend_button": "add_friend_18x18"
+    },
+    "activity_biz_claim_password": {
+        "claim_first_name_clear": "closed_button_selector",
+        "claim_last_name_clear": "closed_button_selector",
+        "claim_password_clear": "closed_button_selector"
+    },
+    "first_photo_thumbnail_frame": {
+        "image": "thumbnail_photo_frame",
+        "play_video_icon": "video_play_56x56"
+    },
+    "business_question": {
+        "arrow": "arrow_graphic"
+    },
+    "event_rsvp_title_panel": {
+        "disclosure": "arrow_graphic"
+    },
+    "panel_activity_feed_business_item": {
+        "business_image": "biz_nophoto",
+        "bookmark_button": "save_24x24"
+    },
+    "nav_panel_user_logged_in": {
+        "nav_user_photo": "default_user_avatar_40x40",
+        "chevron": "arrow_graphic"
+    },
+    "activity_biz_claim_login": {
+        "claim_email_clear": "closed_button_selector",
+        "claim_password_clear": "closed_button_selector"
+    },
+    "compliment_feed_item": {
+        "compliment_icon": "compliment_hot"
+    },
+    "category_panel": {
+        "close_button": "closed_button_selector"
+    },
+    "account_confirmed_dialog": {
+        "icon_border": "starburst_background"
+    },
+    "panel_activity_feed_business_segment": {
+        "business_image": "biz_nophoto",
+        "bookmark_button": "save_outline_24x24"
+    },
+    "asg_yelp_tooltip": {
+        "tooltip_arrow_right": "asg_arrow_left",
+        "tooltip_arrow_bottom": "asg_arrow_up",
+        "tooltip_arrow_left": "asg_arrow_right",
+        "tooltip_arrow_top": "asg_arrow_down"
+    },
+    "activity_biz_claim_success_get_the_app": {
+        "check_mark": "checkmark_badged_30x30",
+        "biz_app_icon": "download_app",
+        "ads_promo_icon": "money_promo"
+    },
+    "panel_activity_feed_review_segment": {
+        "checkin_icon": "check_in_24x24",
+        "photo_icon": "camera_24x24"
+    },
+    "video_play_icon": {
+        "video_play_icon": "video_play_56x56"
+    },
+    "post_review_single_column_ynra_item": {
+        "menu_button": "overflow_18x18"
+    },
+    "activity_biz_claim_verification_calling": {
+        "icon": "phone_24x24"
+    },
+    "search_overlay_content": {
+        "search_button": "white_magnifying_glass",
+        "close_button": "search_close_icon"
+    },
+    "activity_post_checkout_rewards_pitch": {
+        "confirmation_icon": "checkmark_24x24",
+        "close_button": "close_24x24",
+        "cashback_dining_banner_image": "cashback_dining_banner"
+    },
+    "fragment_nominate_recommendation": {
+        "close_icon": "grey_close_icon"
+    },
+    "businesspage_list_button": {
+        "disclosure": "arrow_graphic"
+    },
+    "panel_tip_user_feed_cell": {
+        "compliment_button": "compliment_button_icon",
+        "like_button": "like_button_icon"
+    },
+    "com_facebook_tooltip_bubble": {
+        "com_facebook_button_xout": "com_facebook_tooltip_blue_xout",
+        "com_facebook_tooltip_bubble_view_top_pointer": "com_facebook_tooltip_blue_topnub",
+        "com_facebook_tooltip_bubble_view_bottom_pointer": "com_facebook_tooltip_blue_bottomnub"
+    },
+    "activity_write_review": {
+        "close_review": "close_24x24",
+        "header_arrow": "chevron_down_24x24"
+    },
+    "photo_thumbnail_frame": {
+        "image": "thumbnail_photo_frame",
+        "play_video_icon": "video_play_56x56"
+    },
+    "fragment_video_capture": {
+        "photo_toggle": "camera_toggle"
+    },
+    "featured_collections_section_header": {
+        "featured_collections_header_chevron": "chevron_down_14x14"
+    },
+    "panel_enter_platform_address": {
+        "reverse_geolocate_button": "button_android_location"
+    },
+    "activity_hoodz_onboarding_confirm": {
+        "info": "info_outline_24x24",
+        "hero": "hoodz_hero"
+    },
+    "search_bar_non_editable_text_input": {
+        "search_text_icon": "search_24x24"
+    },
+    "fragment_add_caption": {
+        "video_icon": "video_play_56x56"
+    },
+    "fragment_edit_caption": {
+        "video_icon": "video_play_96x96"
+    },
+    "businesspage_section_notrecommendedreviews": {
+        "arrow": "arrow_graphic"
+    },
+    "non_user_owned_panel_collection_item": {
+        "update_icon": "blue_dot",
+        "save_collection_item_button": "bookmark_outline_temporary_30x30",
+        "note_divider": "divider_line"
+    },
+    "panel_event_description": {
+        "when_arrow": "arrow_graphic",
+        "description_arrow": "arrow_graphic"
+    },
+    "fragment_media_carousel": {
+        "image_1": "gray_light_interface",
+        "image_2": "gray_light_interface",
+        "image_3": "gray_light_interface",
+        "image_4": "gray_light_interface",
+        "transparent_overlay": "transparent_fading_photo_bottom",
+        "play_icon": "video_play_78x78"
+    },
+    "panel_project": {
+        "status": "solid_circle_blue"
+    },
+    "message_base_view": {
+        "avatar": "default_user_avatar_32x32"
+    },
+    "biz_attribute_review_stars": {
+        "check_in_review_start_stars": "stars_large_0"
+    },
+    "badge_grid_cell": {
+        "badge_image": "unearned"
+    },
+    "activity_biz_claim_email": {
+        "claim_email_clear": "closed_button_selector"
+    },
+    "toolbar_layout": {
+        "toolbar_logo": "yelp_logo_medium"
+    },
+    "business_info_cell": {
+        "disclosure": "arrow_graphic"
+    },
+    "activity_add_gift_recipient": {
+        "import_contacts": "ic_action_add_person"
+    },
+    "drawer_layout": {
+        "falling_dino": "dino_animation_freefall_carmen"
+    },
+    "businesspage_map_address": {
+        "directions_button": "directions_24x24"
+    },
+    "panel_base_user_feed_cell": {
+        "item_image": "biz_nophoto"
+    },
+    "panel_checkin_comment_bubble_buttons": {
+        "comment_icon": "comment_icon_gray",
+        "comment_button": "comment_icon_black",
+        "like_button": "like_button_icon"
+    },
+    "activity_write_tip": {
+        "border": "image_thumbnail_border_tip_photo"
+    },
+    "place_autocomplete_fragment": {
+        "place_autocomplete_search_button": "places_ic_search",
+        "place_autocomplete_clear_button": "places_ic_clear"
+    },
+    "activity_user_profile_logged_out_exp": {
+        "bookmark_icon": "bookmark_24x24",
+        "friends_icon": "friends_24x24",
+        "checkin_icon": "check_in_24x24"
+    },
+    "popular_dishes_single_photo_thumbnail_frame": {
+        "image": "thumbnail_photo_frame"
+    },
+    "my_bookmarks_collection_item": {
+        "search_image": "biz_nophoto",
+        "save_collection_item_button": "bookmark_outline_temporary_30x30"
+    },
+    "qoc_question_view": {
+        "add_photos": "bt_ic_camera"
+    },
+    "panel_activity_biz_already_claimed_reminder": {
+        "bizapp_icon": "bizapp_icon"
+    },
+    "activity_popup_content": {
+        "dlg_draw": "?notificationImage"
+    },
+    "activity_place_in_line": {
+        "user_circle": "gray_circle"
+    },
+    "nearby_rewards_pitch": {
+        "close_button": "close_24x24"
+    },
+    "profile_onboarding_task_item": {
+        "check_box": "checkmark"
+    },
+    "collections_header": {
+        "follow_button_checkmark": "checkmark_14x14"
+    },
+    "browse_user_collections_list_row": {
+        "collection_primary_photo": "biz_nophoto",
+        "collection_update_icon": "blue_dot"
+    },
+    "sentiment_survey_question": {
+        "divider": "divider_line"
+    },
+    "panel_contact_label": {
+        "image": "blank_user_medium"
+    },
+    "panel_activity_feed_event_segment": {
+        "call_to_action": "arrow_graphic"
+    },
+    "appwidget_main": {
+        "logo_button": "appwidget_burst_icon",
+        "restaurants_button": "food_24x24",
+        "coffee_button": "coffee_24x24",
+        "bars_button": "nightlife_24x24",
+        "appwidget_search_button": "search_24x24"
+    },
+    "panel_header_nearby_check_ins": {
+        "check_in_button": "check_in_icon"
+    },
+    "panel_service_offerings_full_bleed_button": {
+        "chevron": "arrow_graphic"
+    },
+    "generic_carousel_banner": {
+        "main_image": "biz_nophoto"
+    },
+    "fragment_conversation_thread": {
+        "arrow": "arrow_graphic"
+    },
+    "activity_message_the_business": {
+        "add_photo_button": "add_photo_24x24"
+    },
+    "panel_verified_license_badge": {
+        "verified_license_badge": "verified_license_badge_90x90"
+    },
+    "tips_component": {
+        "drawable": "light_bulb_24x24",
+        "arrow": "arrow_graphic"
+    },
+    "compliment": {
+        "compliment_icon": "app_icon"
+    },
+    "component_user_action_bar": {
+        "user_profile_add_friend": "add_friend_24x24"
+    },
+    "activity_user_preferences_page": {
+        "greeting_image": "preferences_page_greeting_icon"
+    },
+    "modern_featured_collections_carousel_item": {
+        "collection_small_photo_top": "biz_nophoto",
+        "collection_small_photo_bottom": "biz_nophoto"
+    },
+    "panel_food_ordering_fulfillment_partner": {
+        "brand_logo": "ghlogo"
+    },
+    "address_with_chevron": {
+        "chevron": "arrow_graphic"
+    },
+    "elite_event_item": {
+        "event_photo": "blank_event"
+    },
+    "review_entry_point_simple": {
+        "user_photo": "default_user_avatar_58x58"
+    },
+    "activity_food_ordering_item_details": {
+        "schedule_order_info_icon": "info_14x14"
+    },
+    "war_photo_slider_item": {
+        "remove_button": "close_30x30",
+        "caption_edit_button": "pencil_24x24"
+    },
+    "takeout_content_view": {
+        "pickup_content_image": "map_location_icon"
+    },
+    "bookmarks_header": {
+        "close_button": "close_icon"
+    },
+    "event_rsvp_guests_panel": {
+        "details_arrow": "arrow_graphic"
+    },
+    "user_profile_header": {
+        "first_star": "falling_star",
+        "second_star": "falling_star",
+        "third_star": "falling_star",
+        "fourth_star": "falling_star",
+        "fifth_star": "falling_star"
+    },
+    "fragment_find_friends_fb_contacts_results": {
+        "facebook_icon": "find_friends_facebook"
+    },
+    "new_ynra_design": {
+        "menu_button": "overflow_18x18"
+    },
+    "panel_event_business": {
+        "business_disclosure": "arrow_graphic"
+    },
+    "photo_thumbnail_frame_with_margin": {
+        "image": "thumbnail_photo_frame",
+        "play_video_icon": "video_play_56x56"
+    },
+    "panel_bookmarks_collection_item": {
+        "image_1": "gray_light_interface",
+        "image_2": "gray_light_interface",
+        "image_3": "gray_light_interface",
+        "image_4": "gray_light_interface"
+    },
+    "platform_error_component": {
+        "error_image": "error_unknown"
+    },
+    "single_photo_collections_carousel_item": {
+        "collection_primary_photo": "biz_nophoto"
+    },
+    "panel_business_review_page": {
+        "review_translate_attribution": "google_translate_attribution"
+    },
+    "panel_business_platform_base": {
+        "bookmark_flag": "bookmarked",
+        "direction": "multicompass"
+    },
+    "activity_check_in": {
+        "remove_moment": "close_18x18",
+        "black_tint": "transparent_black"
+    },
+    "activity_menu_list": {
+        "fab": "list_24x24"
+    },
+    "review_pager": {
+        "left_arrow": "chevron_left_14x14",
+        "right_arrow": "chevron_right_14x14"
+    },
+    "panel_event_location": {
+        "mapIcon": "map_cell_icon"
+    },
+    "combo_list_header": {
+        "handle": "notification_bar_drawer_handle"
+    },
+    "media_carousel_cateogy_item": {
+        "image_1": "gray_light_interface",
+        "image_2": "gray_light_interface",
+        "image_3": "gray_light_interface",
+        "image_4": "gray_light_interface"
+    },
+    "cta_layout": {
+        "cta_disclosure": "chevron_right_14x14"
+    },
+    "nav_drawer_pitch": {
+        "drawer_pitch_close_button": "close_24x24"
+    },
+    "feed_entry_header": {
+        "header_icon": "bookmarked"
+    },
+    "feedback_holder": {
+        "thumb_image": "thumb_red_small"
+    },
+    "vertical_search_coupon": {
+        "image_sushi": "cropped_sushi",
+        "image_dounut": "cropped_dounut",
+        "close": "close_icon"
+    },
+    "businesspage_cant_buy_reviews": {
+        "close": "close_icon"
+    },
+    "message_input_box": {
+        "add_photo_button": "add_photo_24x24"
+    },
+    "panel_collections_error": {
+        "error_image": "dino_no_connection"
+    },
+    "attachment_image_view": {
+        "imageItem": "default_user_avatar_32x32"
+    },
+    "activity_first_review": {
+        "write_another_review": "review_24x24"
+    },
+    "bookmarks_collection_search_business_suggestion_row": {
+        "search_suggestion_image": "biz_nophoto"
+    },
+    "unconfirmed_visit_item": {
+        "visit_no_button": "close_18x18",
+        "visit_yes_button": "checkmark_18x18"
+    },
+    "panel_business_base": {
+        "bookmark_flag": "bookmarked",
+        "direction": "multicompass",
+        "search_container_imageview": "marker_grouped_14x14"
+    },
+    "section_header_with_overflow_button": {
+        "overflow_menu_icon": "more_24x24"
+    },
+    "panel_single_review_text": {
+        "review_translate_attribution": "google_translate_attribution"
+    },
+    "dialog_collection_item": {
+        "check_mark": "checkmark_14x14"
+    },
+    "autoplay_video_view": {
+        "play_icon": "video_play_96x96"
+    },
+    "modern_nearby_search_bar": {
+        "search_text_icon": "search_24x24"
+    },
+    "modern_section_header_with_overflow_button": {
+        "overflow_menu_icon": "more_24x24"
+    },
+    "review_fragment": {
+        "thanks_icon": "thank_you_24x24"
+    },
+    "from_this_business": {
+        "from_this_biz_disclosure": "arrow_graphic"
+    },
+    "panel_error": {
+        "error_image": "dino_no_connection"
+    },
+    "activity_rewards_posttransactionpitch_onepage": {
+        "confirmation_icon": "checkmark_24x24",
+        "close_button": "close_24x24"
+    },
+    "activity_photo_prompt": {
+        "background": "prompt_background_bar"
+    },
+    "user_owned_panel_collection_item": {
+        "search_image": "biz_nophoto",
+        "save_collection_item_button": "bookmark_outline_temporary_30x30",
+        "note_divider": "divider_line"
+    },
+    "photo_teaser_post_review_banner": {
+        "icon": "checkmark_24x24"
+    },
+    "button_add_photo_video": {
+        "add_media_button": "camera_24x24"
+    },
+    "activity_write_review_tabbed": {
+        "close_review": "close_24x24",
+        "keyboard_tab_icon": "keyboard_inactive_24x24",
+        "previous_reviews_tab_icon": "review_outline_30x30",
+        "photos_tab_icon": "camera_outline_24x24"
+    },
+    "activity_create_account": {
+        "flag_selector_dropdown": "chevron_down_24x24",
+        "user_photo": "blank_user_medium"
+    },
+    "panel_alternative_search": {
+        "close": "close_icon"
+    },
+    "component_rewards_dashboard_balance_summary": {
+        "no_activity_banner": "cashback_dashboard_no_activity_banner"
+    },
+    "activity_biz_claim_verification_sms": {
+        "icon": "mobile_24x24"
+    },
+    "panel_address_autocomplete": {
+        "clear_text": "search_close_icon"
+    },
+    "panel_activity_feed_photo_segment": {
+        "uploaded_photo_1": "picture_frame",
+        "uploaded_photo_2": "picture_frame"
+    },
+    "dialog_app_rating_prompt": {
+        "carmen": "carmen"
+    },
+    "favorite_list_item": {
+        "business_photo": "tab_default",
+        "bookmark": "bookmark_hollow"
+    },
+    "questions_on_composer": {
+        "qoc_intro_logo": "qoc_intro"
+    },
+    "panel_activity_feed_user_item": {
+        "call_to_action": "arrow_graphic"
+    },
+    "ordering_sticky_button": {
+        "close_button": "white_close_icon"
+    },
+    "panel_activity_feed_business_fullcontent_segment": {
+        "business_image": "biz_nophoto",
+        "bookmark_button": "save_outline_24x24"
+    },
+    "user_profile_elite_learn_more_v2": {
+        "elite_envelope": "elite_envelope",
+        "elite_learn_more_close": "close_icon"
+    },
+    "activity_deal_redemption": {
+        "stamp_image": "offer_stamp"
+    },
+    "activity_take_photo": {
+        "video_toggle": "video_toggle",
+        "take_photo": "selector_take_photo",
+        "toggle_camera_button": "camera_flip",
+        "flash_button": "camera_flash_icon"
+    },
+    "photo_class_chrome": {
+        "back_button": "back_arrow_material",
+        "overflow_menu_icon": "more_24x24"
+    }
+}

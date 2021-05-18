@@ -1,0 +1,142 @@
+{
+    "contacts_permission_fragment": {
+        "welcome_image": "ic_contacts_permission_request_bg"
+    },
+    "reg_share_fragment": {
+        "rocket_image": "img_signup_share_rocket"
+    },
+    "login_content": {
+        "email_service_logo_imageview": "logo_aol"
+    },
+    "avatar_head": {
+        "picture_background": "main_background_color",
+        "account_avatar": "avatar"
+    },
+    "mail_list_banner_avatars": {
+        "checkbox": "banner_avatar_placeholder"
+    },
+    "reg_switcher": {
+        "picture_background": "main_background_color"
+    },
+    "sms_dialog_item": {
+        "image": "libverify_ic_account_circle_white"
+    },
+    "search_suggest_recent": {
+        "search_icon": "ic_suggest_recent"
+    },
+    "tutorial_page": {
+        "image": "tutorial_big_size"
+    },
+    "external_storage_permission_fragment": {
+        "ext_storage_welcome_image": "img_unlock_access"
+    },
+    "file_browser_folder_list_item": {
+        "folder_icon": "ic_browser_folder"
+    },
+    "alert_dialog": {
+        "icon": "ic_dialog_info",
+        "titleDivider": "?alertDialogTitleDividerColor"
+    },
+    "tutorial_activity": {
+        "picture_background": "main_background_color"
+    },
+    "vital_permissions_fragment": {
+        "welcome_image": "img_unlock_access"
+    },
+    "doregistration": {
+        "picture_background": "main_background_color"
+    },
+    "reg_create_account": {
+        "account_avatar": "ic_add_avatar"
+    },
+    "login_suggest_fragment": {
+        "image": "avatar"
+    },
+    "com_facebook_tooltip_bubble": {
+        "com_facebook_button_xout": "com_facebook_tooltip_blue_xout",
+        "com_facebook_tooltip_bubble_view_top_pointer": "com_facebook_tooltip_blue_topnub",
+        "com_facebook_tooltip_bubble_view_bottom_pointer": "com_facebook_tooltip_blue_bottomnub"
+    },
+    "account_picker_activity": {
+        "picture_background": "main_background_color",
+        "button_login_google": "logo_google"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "sms_login_content": {
+        "email_service_logo_imageview": "logo_aol"
+    },
+    "registration_libverify": {
+        "picture_background": "main_background_color"
+    },
+    "vital_permissions_activity": {
+        "picture_background": "main_background_color"
+    },
+    "permission_message_line": {
+        "message_desc_button": "btn_permission_about"
+    },
+    "login_activity": {
+        "picture_background": "main_background_color"
+    },
+    "account_item": {
+        "avatar": "avatar"
+    },
+    "imap_activation_view": {
+        "image": "img_folder_collector_icon",
+        "progress": "img_folder_collector_loader"
+    },
+    "reg_share_chooser_header": {
+        "chooser_icon": "img_invite_friends"
+    },
+    "splash_screen": {
+        "icon": "logo"
+    },
+    "file_picker": {
+        "transparent_gradient": "transparent_gradient"
+    },
+    "mail_list_banner_snippets_avatars": {
+        "checkbox": "banner_avatar_placeholder"
+    },
+    "suggest_person": {
+        "contact_avatar": "avatar"
+    },
+    "account_list_item_base": {
+        "account_avatar": "avatar_placeholder"
+    },
+    "pin_validate": {
+        "picture_background": "main_background_color"
+    },
+    "contacts_permission_bigger_list_item": {
+        "grant_contacts_permission_icon": "ic_add_contacts_permission"
+    },
+    "google_account_picker_activity": {
+        "button_login_google": "logo_google"
+    },
+    "sms_message_item": {
+        "image": "libverify_ic_account_circle_white"
+    },
+    "about_header": {
+        "picture_background": "main_background_color",
+        "app_icon": "ic_about_app"
+    },
+    "widget": {
+        "widget_icon": "ic_launcher"
+    },
+    "address_book_list_item": {
+        "contact_avatar": "avatar_placeholder"
+    },
+    "plate": {
+        "plate_image": "img_list_banner_smile"
+    },
+    "account_horizontal_list_item": {
+        "account_avatar": "avatar_placeholder",
+        "selected_account_corner": "drawer_corner"
+    },
+    "registration": {
+        "imageView": "logo_mycom"
+    },
+    "welcome_activity_internal": {
+        "picture_background": "main_background_color"
+    }
+}

@@ -19,6 +19,7 @@ from WidgetUtil import WidgetUtil
 from CallGraphParser import CallGraphParser
 from ResourceParser import ResourceParser
 from const import SA_INFO_FOLDER, SNAPSHOT_FOLDER
+from util.file_name_finder import FileNameFinder
 
 
 class Explorer:
@@ -41,6 +42,7 @@ class Explorer:
         self.idx_src_to_tgt = {}
         self.skipped_match = defaultdict(list)
         self.consider_naf_only_widget = False
+        FileNameFinder.get_instance().set_apps(config_id)
 
     def generate_widget_db(self):
         db = {}

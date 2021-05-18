@@ -1,0 +1,55 @@
+{
+    "whitelist_item": {
+        "whitelist_item_cancel": "ic_action_close_red"
+    },
+    "main": {
+        "switcher_plus": "icon_plus_light",
+        "omnibox_overflow": "ic_action_overflow",
+        "omnibox_refresh": "ic_action_refresh",
+        "main_search_cancel": "ic_action_close",
+        "main_search_down": "icon_arrow_down",
+        "main_search_up": "icon_arrow_up"
+    },
+    "main_home": {
+        "open_newTab": "icon_earth",
+        "open_bookmark": "icon_bookmark",
+        "open_history": "ic_action_history",
+        "open_pass": "icon_key"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "dialog_toggle": {
+        "abIcon": "icon_block",
+        "jsIcon": "icon_java",
+        "cookieIcon": "icon_cookie",
+        "historyIcon": "icon_history",
+        "locationIcon": "icon_location",
+        "imagesIcon": "icon_image",
+        "remoteIcon": "icon_remote",
+        "invertIcon": "icon_night",
+        "fontIcon": "icon_size",
+        "font_minus": "icon_minus",
+        "font_plus": "icon_minus"
+    },
+    "dialog_text": {
+        "floatButton_help": "icon_help",
+        "floatButton_settings": "icon_settings",
+        "floatButton_ok": "check_white"
+    },
+    "dialog_help": {
+        "floatButton_settings": "icon_settings",
+        "floatButton_ok": "check_white"
+    },
+    "dialog_menu": {
+        "web_prev": "icon_arrow_left",
+        "web_next": "icon_arrow_right",
+        "pp": "icon_preview",
+        "tab_prev": "icon_arrow_left",
+        "tab_next": "icon_arrow_right",
+        "floatButton_tab": "icon_tab_plus",
+        "floatButton_share": "icon_menu_share",
+        "floatButton_save": "icon_menu_save",
+        "floatButton_more": "icon_dots"
+    }
+}
