@@ -5,6 +5,7 @@ import re
 from StrUtil import StrUtil
 from matching_client.match_object import MatchObject
 from matching_client.object_sender import send_object
+from util.file_name_finder import SourceFileNameAdder, TargetFileNameAdder
 
 
 class WidgetUtil:
@@ -20,7 +21,7 @@ class WidgetUtil:
                       "com.google.android.material.textfield.TextInputLayout",
                       'android.support.design.widget.TextInputLayout']
     state_to_widgets = {}  # for a gui state, there are "all_widgets": a list of all widgets, and
-    WIDGET_STATIC_CLASS = {"TextView", "DialogTitle", "ImageView", "IconTextView", "TextInputLayout"}
+    WIDGET_LABEL_CLASS = {"TextView", "DialogTitle", "ImageView", "IconTextView", "TextInputLayout"}
 
     # "most_similar_widgets": a dict for a source widget and the list of its most similar widgets and scores
 
@@ -289,7 +290,7 @@ class WidgetUtil:
         return cls.get_widget_from_soup_element(soup.find('', regex_cria))
 
     @staticmethod
-    def separate_actionable_label(dynamic_widgets):
+    def separate_actionable_label(src_event, dynamic_widgets):
         actionables = []
         labels = []
         for w in dynamic_widgets:
@@ -298,11 +299,15 @@ class WidgetUtil:
                     labels.append(w)
             else:
                 actionables.append(w)
-        return actionables, labels
+
+        if 'wait_until_element' in src_event['action'][0]:
+            return dynamic_widgets, labels
+        else:
+            return actionables, labels
 
     @staticmethod
     def has_static_class(w):
-        for i in WidgetUtil.WIDGET_STATIC_CLASS:
+        for i in WidgetUtil.WIDGET_LABEL_CLASS:
             if w['class'].endswith(i):
                 return True
         return False
@@ -321,15 +326,19 @@ class WidgetUtil:
     def most_similar(cls, src_event, widgets, use_stopwords=True, expand_btn_to_text=False, cross_check=False):
         w_list = list(widgets)
         dynamic_widgets = MatchObject.get_dynamic_widgets(w_list)
-        actionable_widget, label_widgets = WidgetUtil.separate_actionable_label(dynamic_widgets)
         static_widgets = MatchObject.get_static_widgets(w_list)
+        actionable_widget, label_widgets = WidgetUtil.separate_actionable_label(src_event, dynamic_widgets)
         similars = WidgetUtil.score_widgets(src_event, actionable_widget, label_widgets)
+        MatchObject.add_static_flag(actionable_widget, label_widgets)
         similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None))
         similars.sort(key=lambda x: x[1], reverse=True)
         return similars
 
     @staticmethod
     def score_widgets(src_event, candidates, target_labels):
+        TargetFileNameAdder.add_file_name_to_widgets(target_labels)
+        TargetFileNameAdder.add_file_name_to_widgets(candidates)
+        SourceFileNameAdder.add_file_name_to_widgets([src_event])
         match_object = MatchObject(src_event, candidates, target_labels)
         scored_indexes = send_object(match_object.get_json())
         scored_widgets = []

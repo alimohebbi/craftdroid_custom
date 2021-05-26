@@ -8,6 +8,18 @@ from const import TEST_REPO
 from Databank import Databank
 import imaplib
 
+IMPORTANT_FIELDS = ["checkable", "checked", "class", "clickable", "content-desc", "enabled", "focusable", "focused",
+                    "long-clickable", "package", "password", "resource-id", "scrollable", "selection-start",
+                    "selection-end", "selected", "text", "bounds", "displayed", "action"]
+
+
+def remove_extra_fields(new_actions):
+    for action in new_actions:
+        key_list = list(action.keys())
+        for key in key_list:
+            if key not in IMPORTANT_FIELDS:
+                action.pop(key)
+
 
 class Util:
 
@@ -44,6 +56,7 @@ class Util:
                 continue
             a['resource-id'] = a['id-prefix'] + a['resource-id']
             a.pop('id-prefix', "")
+        remove_extra_fields(new_actions)
         with open(fpath, 'w') as f:
             json.dump(new_actions, f, indent=2)
 
@@ -112,5 +125,3 @@ class Util:
     #         return [v/denominator for v in vec]
     #     else:
     #         return [v for v in vec]
-
-

@@ -16,6 +16,10 @@ class Config(object):
         return self._get_property('apks_dir')
 
     @property
+    def sm_conf_path(self):
+        return self._get_property('sm_conf_path')
+
+    @property
     def decompile_temp(self):
         return self._get_property('decompile_temp')
 

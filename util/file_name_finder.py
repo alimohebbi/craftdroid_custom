@@ -51,7 +51,7 @@ class FileNameFinder:
         candidates_dummy_widgets = [{'text': i, 'class': 'Button'} for i in candidates_activity]
         match_obj = MatchObject(src_dummy_widget, candidates_dummy_widgets, None)
         sm_config = {"algorithm": "custom", "word_embedding": "wm", "descriptors": "atm",
-                     "training_set": "android", "app_pair": self.src_app + '-' + self.target_app}
+                     "training_set": "android", "app_pair": 'craftdroid'}
         match_obj.set_sm_config(sm_config)
         return match_obj
 
@@ -59,7 +59,8 @@ class FileNameFinder:
 class FileNameAdder(ABC):
     @classmethod
     def add_file_name_to_widgets(cls, widgets: list):
-
+        if widgets is None:
+            return
         for w in widgets:
             resource_id = w['resource-id']
             results = cls._find_file_by_src_id(resource_id)

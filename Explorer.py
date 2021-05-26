@@ -19,6 +19,7 @@ from WidgetUtil import WidgetUtil
 from CallGraphParser import CallGraphParser
 from ResourceParser import ResourceParser
 from const import SA_INFO_FOLDER, SNAPSHOT_FOLDER
+from matching_client.match_object import setup_sm_config
 from util.file_name_finder import FileNameFinder
 
 
@@ -43,6 +44,7 @@ class Explorer:
         self.skipped_match = defaultdict(list)
         self.consider_naf_only_widget = False
         FileNameFinder.get_instance().set_apps(config_id)
+        setup_sm_config()
 
     def generate_widget_db(self):
         db = {}
@@ -61,7 +63,10 @@ class Explorer:
 
     def run(self):
         # todo: or exceed a time limit
-        while self.f_target - self.f_prev_target > 0.001:  # still found a better solution
+        flag = True
+        # while self.f_target - self.f_prev_target > 0.001:  # still found a better solution
+        while flag:  # still found a better solution
+            flag = False
             print('--\nStart a new round to find a better tgt event sequence')
             print('Timestamp:', datetime.now())
             self.f_prev_target = self.f_target
