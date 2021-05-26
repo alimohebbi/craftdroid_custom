@@ -5,4 +5,5 @@ sa_info
 .idea
 test_repo
 apk_decompiled_temp
-
+**/__pycache__
+**.pyc
