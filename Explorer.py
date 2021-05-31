@@ -20,7 +20,7 @@ from CallGraphParser import CallGraphParser
 from ResourceParser import ResourceParser
 from const import SA_INFO_FOLDER, SNAPSHOT_FOLDER
 from matching_client.match_object import setup_sm_config
-from util.file_name_finder import FileNameFinder
+from widget_process.file_name_adder import FileNameFinder
 
 
 class Explorer:

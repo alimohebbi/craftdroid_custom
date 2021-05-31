@@ -1,11 +1,13 @@
-from bs4 import BeautifulSoup
-import xml.etree.ElementTree as ET
 import re
+import xml.etree.ElementTree as ET
+
+from bs4 import BeautifulSoup
+
 # local import
-from StrUtil import StrUtil
 from matching_client.match_object import MatchObject
 from matching_client.object_sender import send_object
-from util.file_name_finder import SourceFileNameAdder, TargetFileNameAdder
+from widget_process.file_name_adder import SourceFileNameAdder, TargetFileNameAdder
+from widget_process.widget_classifier import *
 
 
 class WidgetUtil:
@@ -21,7 +23,6 @@ class WidgetUtil:
                       "com.google.android.material.textfield.TextInputLayout",
                       'android.support.design.widget.TextInputLayout']
     state_to_widgets = {}  # for a gui state, there are "all_widgets": a list of all widgets, and
-    WIDGET_LABEL_CLASS = {"TextView", "DialogTitle", "ImageView", "IconTextView", "TextInputLayout"}
 
     # "most_similar_widgets": a dict for a source widget and the list of its most similar widgets and scores
 
@@ -289,47 +290,14 @@ class WidgetUtil:
         soup = BeautifulSoup(dom, 'lxml')
         return cls.get_widget_from_soup_element(soup.find('', regex_cria))
 
-    @staticmethod
-    def separate_actionable_label(src_event, dynamic_widgets):
-        actionables = []
-        labels = []
-        for w in dynamic_widgets:
-            if WidgetUtil.has_static_class(w) and not WidgetUtil.is_clickable(w):
-                if WidgetUtil.has_text_or_content(w):
-                    labels.append(w)
-            else:
-                actionables.append(w)
-
-        if 'wait_until_element' in src_event['action'][0]:
-            return dynamic_widgets, labels
-        else:
-            return actionables, labels
-
-    @staticmethod
-    def has_static_class(w):
-        for i in WidgetUtil.WIDGET_LABEL_CLASS:
-            if w['class'].endswith(i):
-                return True
-        return False
-
-    @staticmethod
-    def is_clickable(w):
-        if w['clickable'] and w['clickable'] == 'true':
-            return True
-        if w['long-clickable'] and w['long-clickable'] == 'true':
-            return True
-        if w['checkable'] and w['checkable'] == 'true':
-            return True
-        return False
-
     @classmethod
     def most_similar(cls, src_event, widgets, use_stopwords=True, expand_btn_to_text=False, cross_check=False):
         w_list = list(widgets)
-        dynamic_widgets = MatchObject.get_dynamic_widgets(w_list)
-        static_widgets = MatchObject.get_static_widgets(w_list)
-        actionable_widget, label_widgets = WidgetUtil.separate_actionable_label(src_event, dynamic_widgets)
+        dynamic_widgets = get_dynamic_widgets(w_list)
+        static_widgets = get_static_widgets(w_list)
+        actionable_widget, label_widgets = separate_actionable_label(src_event, dynamic_widgets)
         similars = WidgetUtil.score_widgets(src_event, actionable_widget, label_widgets)
-        MatchObject.add_static_flag(actionable_widget, label_widgets)
+        add_static_flag(actionable_widget, label_widgets)
         similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None))
         similars.sort(key=lambda x: x[1], reverse=True)
         return similars
@@ -355,12 +323,3 @@ class WidgetUtil:
             if all_btns and len(all_btns) > 0:
                 return cls.get_widget_from_soup_element(all_btns[0])
         return None
-
-    @staticmethod
-    def has_text_or_content(w):
-        if w['text'] and w['text'] != '':
-            return True
-        if w['content-desc'] and w['content-desc'] != '':
-            return True
-
-        return False

@@ -1,12 +1,22 @@
 import json
 import os
+import time
 from copy import deepcopy
 # from numpy import dot
 # from numpy.linalg import norm
+import pathlib
+
 
 from const import TEST_REPO
 from Databank import Databank
+from test_attribute_extractor.test_attribute_extractor import run_craftdroid, check_run_possible, \
+    get_element_attributes_list
+from test_attribute_extractor.utils.craftdroid_parser import craftdroid_parse
+from test_attribute_extractor.utils.utils import get_caps
+
 import imaplib
+
+
 
 IMPORTANT_FIELDS = ["checkable", "checked", "class", "clickable", "content-desc", "enabled", "focusable", "focused",
                     "long-clickable", "package", "password", "resource-id", "scrollable", "selection-start",
@@ -66,9 +76,7 @@ class Util:
             json.dump(actions, f, indent=2)
 
     @staticmethod
-    def load_events(config_id, target):
-        # target: 'generated', 'base_from', 'base_to'
-        # e.g., a41a-a42a-b41 -> [Util.TEST_REPO, 'a4', 'b41', 'base', 'a41a.json']
+    def find_file_path(config_id, target):
         fpath = [TEST_REPO, config_id[:2], config_id.split('-')[-1]]
         sub_dir = ''
         if target == 'generated':
@@ -87,6 +95,36 @@ class Util:
             assert False, "Wrong target"
         fpath = os.path.join(*fpath)
         assert os.path.exists(fpath), f"Invalid file path: {fpath}"
+        return fpath
+
+    @staticmethod
+    def run_source_test(file):
+        caps, app_package = get_caps(file)
+        run_possible, driver = check_run_possible(app_package, caps)
+        if run_possible:
+            start_time = time.time()
+            log_fname = file.replace(file.split("/")[-1],
+                                     "result/" + file.split("/")[-1].split(".")[0] + "_run_log.txt")
+            parsed_test = craftdroid_parse(file)
+            element_attributes_list, completed = get_element_attributes_list(parsed_test, app_package, driver,
+                                                                             log_fname)
+            print(str(time.time() - start_time) + " seconds\n")
+            if completed:
+                return element_attributes_list
+            else:
+                print("UNABLE TO RUN THE WHOLE TEST FOR THE FILE :" + str(file) + ".PLEASE CHECK THE ERROR LOG!")
+                return None
+
+    @staticmethod
+    def load_events(config_id, target):
+        fpath = Util.find_file_path(config_id, target)
+        Util.run_source_test(fpath)
+
+    @staticmethod
+    def load_events_old(config_id, target):
+        # target: 'generated', 'base_from', 'base_to'
+        # e.g., a41a-a42a-b41 -> [Util.TEST_REPO, 'a4', 'b41', 'base', 'a41a.json']
+        fpath = Util.find_file_path(config_id, target)
         act_list = []
         with open(fpath, 'r', encoding='utf-8') as f:
             acts = json.load(f)

@@ -27,22 +27,6 @@ class MatchObject:
     def get_json(self):
         return self._json_obj
 
-    @staticmethod
-    def get_dynamic_widgets(widgets):
-        return [i for i in widgets if len(i) > 13 and 'static' not in i]
-
-
-    @staticmethod
-    def add_static_flag(actionable_widget, label_widgets):
-        for i in actionable_widget:
-            i['static'] = True
-        for i in label_widgets:
-            i['static'] = True
-
-    @staticmethod
-    def get_static_widgets(widgets):
-        return [i for i in widgets if len(i) < 13 or 'static' in i]
-
     @classmethod
     def set_sm_config(cls, sm_config):
         cls._sm_config = json.dumps(sm_config)

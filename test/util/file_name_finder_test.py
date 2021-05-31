@@ -1,6 +1,6 @@
 import unittest
 
-from util.file_name_finder import SourceFileNameAdder, FileNameFinder, TargetFileNameAdder
+from widget_process.file_name_finder import SourceFileNameAdder, FileNameFinder, TargetFileNameAdder
 
 
 class TestFileNameFinder(unittest.TestCase):
