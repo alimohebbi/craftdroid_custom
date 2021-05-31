@@ -1,0 +1,3 @@
+[submodule "test_attribute_extractor"]
+	path = test_attribute_extractor
+	url = git@star-rep.inf.usi.ch:FarideKhalili/test_attribute_extractor.git

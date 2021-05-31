@@ -118,7 +118,7 @@ class Util:
     @staticmethod
     def load_events(config_id, target):
         fpath = Util.find_file_path(config_id, target)
-        Util.run_source_test(fpath)
+        return Util.run_source_test(fpath)
 
     @staticmethod
     def load_events_old(config_id, target):

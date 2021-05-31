@@ -64,8 +64,8 @@ class Explorer:
     def run(self):
         # todo: or exceed a time limit
         flag = True
-        # while self.f_target - self.f_prev_target > 0.001:  # still found a better solution
-        while flag:  # still found a better solution
+        while self.f_target - self.f_prev_target > 0.001:  # still found a better solution
+        # while flag:  # still found a better solution
             flag = False
             print('--\nStart a new round to find a better tgt event sequence')
             print('Timestamp:', datetime.now())
