@@ -16,7 +16,7 @@ from test_attribute_extractor.utils.utils import get_caps
 
 import imaplib
 
-
+from widget_process.extractor import get_src_labels, refine_event
 
 IMPORTANT_FIELDS = ["checkable", "checked", "class", "clickable", "content-desc", "enabled", "focusable", "focused",
                     "long-clickable", "package", "password", "resource-id", "scrollable", "selection-start",
@@ -108,6 +108,7 @@ class Util:
             parsed_test = craftdroid_parse(file)
             element_attributes_list, completed = get_element_attributes_list(parsed_test, app_package, driver,
                                                                              log_fname)
+            driver.close_app()
             print(str(time.time() - start_time) + " seconds\n")
             if completed:
                 return element_attributes_list
@@ -118,7 +119,10 @@ class Util:
     @staticmethod
     def load_events(config_id, target):
         fpath = Util.find_file_path(config_id, target)
-        return Util.run_source_test(fpath)
+        src_events = Util.run_source_test(fpath)
+        all_labels = list(map(get_src_labels, src_events))
+        refined_events = list(map(refine_event, src_events))
+        return refined_events, all_labels
 
     @staticmethod
     def load_events_old(config_id, target):

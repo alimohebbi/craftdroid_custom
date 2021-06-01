@@ -1,12 +1,10 @@
 from bs4 import BeautifulSoup
-
+import copy
 from WidgetUtil import WidgetUtil
+from widget_process.widget_classifier import separate_actionable_label
 
 
-def find_all_widgets(dom, pkg, act):
-    if act.startswith('com.facebook'):  # the app reaches facebook login, out of the app's scope
-        return []
-
+def find_all_widgets(dom):
     soup = BeautifulSoup(dom, 'lxml')
     widgets = []
     for w_class in WidgetUtil.WIDGET_CLASSES:
@@ -14,12 +12,27 @@ def find_all_widgets(dom, pkg, act):
         for e in elements:
             d = WidgetUtil.get_widget_from_soup_element(e)
             if d:
-                d['package'], d['activity'] = pkg, act
                 widgets.append(d)
     return widgets
 
 
 def get_widget_from_dom(attr, dom):
     soup = BeautifulSoup(dom, 'lxml')
-    e = soup.find_next(attrs=attr)
+    e = soup.find(attrs=attr)
     return WidgetUtil.get_widget_from_soup_element(e)
+
+
+def get_src_labels(src_event):
+    widgets = find_all_widgets(src_event['page'])
+    _, labels = separate_actionable_label(src_event, widgets)
+    return labels
+
+
+def refine_event(src_event):
+    src_copy = copy.deepcopy(src_event)
+    for i in src_event.keys():
+        if i not in WidgetUtil.FEATURE_KEYS:
+            src_copy.pop(i)
+    event = get_widget_from_dom(src_copy, src_event['page'])
+    event['activity'] = src_event['activity']
+    return event

@@ -285,7 +285,11 @@ class Runner:
 
     def get_page_source(self):
         self.hide_keyboard()
-        return self.driver.page_source
+        page = self.driver.page_source
+        page = page.replace('\r', '')
+        page = page.replace('\n', '')
+        page = re.sub(r'>[\ ]+<', '><', page)
+        return page
 
     def get_current_package(self):
         return self.driver.current_package

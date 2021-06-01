@@ -15,7 +15,7 @@ from StrUtil import StrUtil
 from Configuration import Configuration
 from Runner import Runner
 from WidgetUtil import WidgetUtil
-#from misc import teardown_mail
+# from misc import teardown_mail
 from CallGraphParser import CallGraphParser
 from ResourceParser import ResourceParser
 from const import SA_INFO_FOLDER, SNAPSHOT_FOLDER
@@ -26,8 +26,8 @@ from widget_process.file_name_adder import FileNameFinder
 class Explorer:
     def __init__(self, config_id, appium_port='4723', udid=None):
         self.config = Configuration(config_id)
+        self.src_events, self.src_labels = Util.load_events(self.config.id, 'base_from')
         self.runner = Runner(self.config.pkg_to, self.config.act_to, self.config.no_reset, appium_port, udid)
-        self.src_events = Util.load_events(self.config.id, 'base_from')
         self.tid = self.config.id
         self.current_src_index = 0
         self.tgt_events = []
@@ -65,7 +65,7 @@ class Explorer:
         # todo: or exceed a time limit
         flag = True
         while self.f_target - self.f_prev_target > 0.001:  # still found a better solution
-        # while flag:  # still found a better solution
+            # while flag:  # still found a better solution
             flag = False
             print('--\nStart a new round to find a better tgt event sequence')
             print('Timestamp:', datetime.now())
@@ -143,23 +143,20 @@ class Explorer:
                             tgt_event = Explorer.generate_empty_event(src_event['event_type'])
                         else:
                             w_candidates = WidgetUtil.most_similar(self.nearest_button_to_text, self.widget_db.values(),
-                                                                   self.config.use_stopwords,
-                                                                   self.config.expand_btn_to_text,
-                                                                   self.config.cross_check)
+                                                                   None)
                             num_to_check = 1  # we know the button exists, so no need to seek other similar ones
                     else:
                         w_candidates = WidgetUtil.most_similar(src_event, self.widget_db.values(),
-                                                               self.config.use_stopwords,
-                                                               self.config.expand_btn_to_text,
-                                                               self.config.cross_check)
+                                                               self.src_labels[self.current_src_index])
 
                     # if w_candidates:
                     #     w_candidates = self.decay_by_distance(w_candidates, pkg, act)
                     for i, (w, _) in enumerate(w_candidates[:num_to_check]):
                         # encode-decode: for some weird chars in a1 apps
-                        print(f'({i+1}/{num_to_check}) Validating Similar w: {w}'.encode("utf-8").decode("utf-8"))
+                        print(f'({i + 1}/{num_to_check}) Validating Similar w: {w}'.encode("utf-8").decode("utf-8"))
                         # skip invalid events
-                        if any([WidgetUtil.is_equal(w, e) for e in self.invalid_events.get(self.current_src_index, [])]):
+                        if any([WidgetUtil.is_equal(w, e) for e in
+                                self.invalid_events.get(self.current_src_index, [])]):
                             print('Skip a known broken event:', w)
                             continue
                         # skip widget with empty attribute if the action is wait_until with the attribute; a33-a35-b31
@@ -174,7 +171,7 @@ class Explorer:
                                         break
                                     # a31-a33-b31; 'action': ['wait_until_element_presence', 10, 'xpath',
                                     #                         '//android.widget.TextView[@content-desc=""]']
-                                    elif src_event['action'][2] == 'xpath' and '@'+atc in src_event['action'][3]:
+                                    elif src_event['action'][2] == 'xpath' and '@' + atc in src_event['action'][3]:
                                         is_empty_atc = True
                                         break
                             if is_empty_atc:
@@ -194,13 +191,15 @@ class Explorer:
                                     continue
                                 is_mapped, tgt_idx, src_idx = self.check_mapped(match)
                                 # exact identical EditText in src_events, e.g., a12-a11-b12
-                                is_idential_src_widgets = self.check_identical_src_widgets(src_idx, self.current_src_index)
+                                is_idential_src_widgets = self.check_identical_src_widgets(src_idx,
+                                                                                           self.current_src_index)
                                 if is_mapped and not is_idential_src_widgets:
                                     if match['score'] <= self.tgt_events[tgt_idx]['score']:
                                         print(f'Duplicated match (previous): {match}\n. Skipped.')
                                         continue  # discard this match
                                     else:
-                                        print(f'Duplicated match. Backtrack to src_idx: {src_idx} to find another match')
+                                        print(
+                                            f'Duplicated match. Backtrack to src_idx: {src_idx} to find another match')
                                         backtrack = True
                                         self.current_src_index = src_idx
                                         self.skipped_match[src_idx].append(deepcopy(self.tgt_events[tgt_idx]))
@@ -208,7 +207,7 @@ class Explorer:
                                         if src_idx == 0:
                                             self.tgt_events = []
                                         else:
-                                            self.tgt_events = self.tgt_events[:self.idx_src_to_tgt[src_idx-1] + 1]
+                                            self.tgt_events = self.tgt_events[:self.idx_src_to_tgt[src_idx - 1] + 1]
                                         break
                             if 'clickable' not in w:  # a static widget
                                 self.widget_db.pop(WidgetUtil.get_widget_signature(w), None)
@@ -418,10 +417,10 @@ class Explorer:
                     # add current path prefix to invalide path
                     is_existed = False
                     for ip in invalid_paths:
-                        if ip == ppath[:i+1]:
+                        if ip == ppath[:i + 1]:
                             is_existed = True
                     if not is_existed:
-                        invalid_paths.append([h for h in ppath[:i+1]])
+                        invalid_paths.append([h for h in ppath[:i + 1]])
                     return None
                 w_stepping['action'] = [action]
                 w_stepping['activity'] = self.runner.get_current_activity()
@@ -445,7 +444,7 @@ class Explorer:
         if self.src_events[self.current_src_index]['action'][0] == 'wait_until_text_presence':
             criteria['text'] = self.src_events[self.current_src_index]['action'][3]
         # for confirm email: if both prev and current src_action are input email
-        if self.current_src_index > 0 and self.is_for_email_or_pwd(self.src_events[self.current_src_index-1],
+        if self.current_src_index > 0 and self.is_for_email_or_pwd(self.src_events[self.current_src_index - 1],
                                                                    self.src_events[self.current_src_index]):
             # for the case of matching to the only one email field
             if StrUtil.is_contain_email(self.src_events[self.current_src_index]['action'][1]):
@@ -480,7 +479,7 @@ class Explorer:
         oracle_scores = [float(e['score']) for e in events if e['event_type'] == 'oracle']
         gui = mean(gui_scores) if gui_scores else 0
         oracle = mean(oracle_scores) if oracle_scores else 0
-        return 0.5*gui + 0.5*oracle
+        return 0.5 * gui + 0.5 * oracle
 
     def snapshot(self):
         with open(os.path.join(SNAPSHOT_FOLDER, self.config.id + '.pkl'), 'wb') as f:
@@ -611,7 +610,8 @@ if __name__ == '__main__':
             print(explorer.skipped_match)
             print(explorer.nearest_button_to_text)
             # input()
-            explorer.runner = Runner(explorer.config.pkg_to, explorer.config.act_to, explorer.config.no_reset, appium_port, udid)
+            explorer.runner = Runner(explorer.config.pkg_to, explorer.config.act_to, explorer.config.no_reset,
+                                     appium_port, udid)
             # explorer.f_target = 0.55
 
     else:
@@ -642,4 +642,3 @@ if __name__ == '__main__':
         print(f'Transfer time in sec: {time.time() - t_start}')
         results = explorer.tgt_events
     Util.save_events(results, config_id)
-

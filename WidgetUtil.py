@@ -291,23 +291,23 @@ class WidgetUtil:
         return cls.get_widget_from_soup_element(soup.find('', regex_cria))
 
     @classmethod
-    def most_similar(cls, src_event, widgets, use_stopwords=True, expand_btn_to_text=False, cross_check=False):
+    def most_similar(cls, src_event, widgets, src_labels):
         w_list = list(widgets)
         dynamic_widgets = get_dynamic_widgets(w_list)
         static_widgets = get_static_widgets(w_list)
-        actionable_widget, label_widgets = separate_actionable_label(src_event, dynamic_widgets)
-        similars = WidgetUtil.score_widgets(src_event, actionable_widget, label_widgets)
-        add_static_flag(actionable_widget, label_widgets)
-        similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None))
+        actionable_widget, target_labels = separate_actionable_label(src_event, dynamic_widgets)
+        similars = WidgetUtil.score_widgets(src_event, actionable_widget, target_labels, src_labels)
+        add_static_flag(actionable_widget, target_labels)
+        similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None, src_labels))
         similars.sort(key=lambda x: x[1], reverse=True)
         return similars
 
     @staticmethod
-    def score_widgets(src_event, candidates, target_labels):
+    def score_widgets(src_event, candidates, target_labels, src_labels):
         TargetFileNameAdder.add_file_name_to_widgets(target_labels)
         TargetFileNameAdder.add_file_name_to_widgets(candidates)
         SourceFileNameAdder.add_file_name_to_widgets([src_event])
-        match_object = MatchObject(src_event, candidates, target_labels)
+        match_object = MatchObject(src_event, candidates, target_labels, src_labels)
         scored_indexes = send_object(match_object.get_json())
         scored_widgets = []
         for k in scored_indexes:
