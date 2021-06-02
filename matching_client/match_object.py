@@ -9,11 +9,13 @@ class MatchObject:
     _sm_config = None
 
     def __init__(self, source_event, candidates: list, target_labels: list, source_labels=None):
-        candidates_map = self.indexify_list(candidates)
-        target_labels_map = self.indexify_list(target_labels)
-        source_labels_map = self.indexify_list(source_labels)
-        self._json_obj = {'sourceEvent': source_event, 'candidates': candidates_map, 'targetLabels': target_labels_map,
-                          'sourceLabels': source_labels_map, 'smConfig': self._sm_config}
+        self.candidates_map = self.indexify_list(candidates)
+        self.target_labels_map = self.indexify_list(target_labels)
+        self.source_labels_map = self.indexify_list(source_labels)
+        self.source_event = source_event
+        self._json_obj = {'sourceEvent': self.source_event, 'candidates': self.candidates_map,
+                          'targetLabels': self.target_labels_map,
+                          'sourceLabels': self.source_labels_map, 'smConfig': self._sm_config}
 
     @staticmethod
     def indexify_list(widgets):

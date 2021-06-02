@@ -9,8 +9,7 @@ import pathlib
 
 from const import TEST_REPO
 from Databank import Databank
-from test_attribute_extractor.test_attribute_extractor import run_craftdroid, check_run_possible, \
-    get_element_attributes_list
+from test_attribute_extractor.test_attribute_extractor import CraftdroidExtractor
 from test_attribute_extractor.utils.craftdroid_parser import craftdroid_parse
 from test_attribute_extractor.utils.utils import get_caps
 
@@ -99,22 +98,11 @@ class Util:
 
     @staticmethod
     def run_source_test(file):
-        caps, app_package = get_caps(file)
-        run_possible, driver = check_run_possible(app_package, caps)
-        if run_possible:
-            start_time = time.time()
-            log_fname = file.replace(file.split("/")[-1],
-                                     "result/" + file.split("/")[-1].split(".")[0] + "_run_log.txt")
-            parsed_test = craftdroid_parse(file)
-            element_attributes_list, completed = get_element_attributes_list(parsed_test, app_package, driver,
-                                                                             log_fname)
-            driver.close_app()
-            print(str(time.time() - start_time) + " seconds\n")
-            if completed:
-                return element_attributes_list
-            else:
-                print("UNABLE TO RUN THE WHOLE TEST FOR THE FILE :" + str(file) + ".PLEASE CHECK THE ERROR LOG!")
-                return None
+        extractor = CraftdroidExtractor(file)
+        results = extractor.run()
+        if results:
+            extractor.driver.quit()
+        return results
 
     @staticmethod
     def load_events(config_id, target):

@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # local import
 from matching_client.match_object import MatchObject
 from matching_client.object_sender import send_object
-from widget_process.file_name_adder import SourceFileNameAdder, TargetFileNameAdder
+from widget_process.file_name_adder import SourceFileNameAdder, TargetFileNameAdder, addFileNameToMatchObject
 from widget_process.widget_classifier import *
 
 
@@ -304,10 +304,8 @@ class WidgetUtil:
 
     @staticmethod
     def score_widgets(src_event, candidates, target_labels, src_labels):
-        TargetFileNameAdder.add_file_name_to_widgets(target_labels)
-        TargetFileNameAdder.add_file_name_to_widgets(candidates)
-        SourceFileNameAdder.add_file_name_to_widgets([src_event])
         match_object = MatchObject(src_event, candidates, target_labels, src_labels)
+        addFileNameToMatchObject(match_object)
         scored_indexes = send_object(match_object.get_json())
         scored_widgets = []
         for k in scored_indexes:

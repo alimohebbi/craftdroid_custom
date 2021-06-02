@@ -35,4 +35,6 @@ def refine_event(src_event):
             src_copy.pop(i)
     event = get_widget_from_dom(src_copy, src_event['page'])
     event['activity'] = src_event['activity']
+    event['event_type'] = src_event['event_type']
+    event['action'] = src_event['action']
     return event

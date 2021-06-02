@@ -101,3 +101,10 @@ class TargetFileNameAdder(FileNameAdder):
     def _find_file_by_src_id(resource_id):
         file_name_finder = FileNameFinder.get_instance()
         return file_name_finder.find_file_by_target_id(resource_id)
+
+
+def addFileNameToMatchObject(m_obj: MatchObject):
+    TargetFileNameAdder.add_file_name_to_widgets(m_obj.target_labels_map.values())
+    TargetFileNameAdder.add_file_name_to_widgets(m_obj.candidates_map.values())
+    SourceFileNameAdder.add_file_name_to_widgets([m_obj.source_event])
+    SourceFileNameAdder.add_file_name_to_widgets(m_obj.source_labels_map.values())
