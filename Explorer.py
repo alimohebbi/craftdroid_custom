@@ -570,19 +570,7 @@ class Explorer:
         return new_candidates
 
 
-if __name__ == '__main__':
-    # python Explorer.py a25-a22-b21 1 5723 emulator-5556 2>&1 | tee log\1-step\a25-a22-b21.txt
-    if len(sys.argv) > 1:
-        config_id = sys.argv[1]
-        # lookahead_step = int(sys.argv[2])
-        appium_port = sys.argv[2]
-        udid = sys.argv[3]
-    else:
-        config_id = 'a33-a35-b31'
-        # lookahead_step = 1
-        appium_port = '5723'
-        udid = 'emulator-5556'
-
+def start(config_id, appium_port, udid):
     LOAD_SNAPSHOT = True
     # LOAD_SNAPSHOT = False
     if os.path.exists(os.path.join(SNAPSHOT_FOLDER, config_id + '.pkl')) and LOAD_SNAPSHOT:
@@ -616,7 +604,6 @@ if __name__ == '__main__':
 
     else:
         explorer = Explorer(config_id, appium_port, udid)
-
     t_start = time.time()
     # explorer.mutate_src_action({'long_press': 'swipe_right', 'swipe_right': 'long_press'})
     is_done, failed_step = explorer.run()
@@ -642,3 +629,19 @@ if __name__ == '__main__':
         print(f'Transfer time in sec: {time.time() - t_start}')
         results = explorer.tgt_events
     Util.save_events(results, config_id)
+
+
+if __name__ == '__main__':
+    # python Explorer.py a25-a22-b21 1 5723 emulator-5556 2>&1 | tee log\1-step\a25-a22-b21.txt
+    if len(sys.argv) > 1:
+        config_id = sys.argv[1]
+        # lookahead_step = int(sys.argv[2])
+        appium_port = sys.argv[2]
+        udid = sys.argv[3]
+    else:
+        config_id = 'a33-a35-b31'
+        # lookahead_step = 1
+        appium_port = '5723'
+        udid = 'emulator-5556'
+
+    start(config_id, appium_port, udid)
