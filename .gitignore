@@ -1,11 +1,12 @@
 venv
 venv2
 w2v_sim_cache.pkl
-sa_info
+
 .idea
-test_repo
+test_repo/**/generated
 apk_decompiled_temp
 **/__pycache__
 **.pyc
 comp-out
 manager/generated/
+log
