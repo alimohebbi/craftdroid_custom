@@ -11,14 +11,15 @@ import re
 from subprocess import call
 # local import
 from Databank import Databank
-#from misc import teardown_mail
+# from misc import teardown_mail
 from StrUtil import StrUtil
 
 
 class Runner:
     def __init__(self, pkg, act, no_reset=False, appium_port='4723', udid=None):
-        desired_caps = Runner.set_caps(pkg, act, no_reset, udid)
-        self.driver = webdriver.Remote('http://localhost:' + appium_port + '/wd/hub', desired_caps)
+        self.appium_port = appium_port
+        self.desired_caps = Runner.set_caps(pkg, act, no_reset, udid)
+        self.driver = webdriver.Remote('http://localhost:' + appium_port + '/wd/hub', self.desired_caps)
         self.databank = Databank()
         self.act_interval = 2
 
@@ -38,13 +39,23 @@ class Runner:
         #     caps['udid'] = udid
         return caps
 
+    def recreate_driver(self):
+        try:
+            self.driver.quit()
+        except Exception as e:
+            print('Failed to close drive')
+        self.driver = webdriver.Remote('http://localhost:' + self.appium_port + '/wd/hub', self.desired_caps)
+
     def perform_actions(self, action_list, require_wait=False, reset=True, cgp=None):
         if reset:
             if self.driver.desired_capabilities['desired']['noReset']:
                 self.driver.launch_app()  # don't clear app data
             else:
-                self.driver.reset()
-        #time.sleep(self.act_interval)
+                try:
+                    self.driver.reset()
+                except WebDriverException as e:
+                    self.recreate_driver()
+        # time.sleep(self.act_interval)
 
         # specific for Ru email apps: a43-a45
         # if len(action_list) > 1:
@@ -133,7 +144,7 @@ class Runner:
             if ele:
                 if action['action'][0] == 'click':
                     # specific corner case for Yelp: click the right part
-                    if 'activity_login_create_account_question' in action['resource-id']\
+                    if 'activity_login_create_account_question' in action['resource-id'] \
                             and action['text'] == "Don't have a Yelp account yet? Sign up.":
                         rect = ele.rect
                         x = rect['x'] + (0.8 * rect['width'])
@@ -201,7 +212,7 @@ class Runner:
                     cgp.add_edge(act_from, act_to, action)
 
         if require_wait:
-            time.sleep(self.act_interval*2)
+            time.sleep(self.act_interval * 2)
         else:
             # time.sleep(self.act_interval/2)
             time.sleep(self.act_interval)
@@ -222,7 +233,7 @@ class Runner:
                         if action['text'] or action['content-desc']:
                             attr = 'text' if action['text'] else 'content-desc'
                             xpath = f'//{action["class"]}[contains(@{attr}, "{action[attr]}") ' \
-                                f'and @resource-id="{rid}"]'
+                                    f'and @resource-id="{rid}"]'
                             ele = self.driver.find_element(MobileBy.XPATH, xpath)
             elif action['content-desc']:
                 xpath = '//' + action['class'] + '[@content-desc="' + action['content-desc'] + '"]'
