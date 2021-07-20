@@ -24,7 +24,8 @@ from widget_process.file_name_adder import FileNameFinder
 
 
 class Explorer:
-    def __init__(self, config_id, appium_port='4723', udid=None):
+    def __init__(self, config_id, appium_port='4723', udid=None, logfile=None):
+        self.logfile = logfile
         self.config = Configuration(config_id)
         self.src_events, self.src_labels = Util.load_events(self.config.id, 'base_from')
         self.runner = Runner(self.config.pkg_to, self.config.act_to, self.config.no_reset, appium_port, udid)
@@ -182,6 +183,7 @@ class Explorer:
                         except Exception as excep:
                             print(excep)
                             traceback.print_exc()
+                            self.logfile.write(traceback.format_exc())
                             return False, self.current_src_index
                         if match:
                             # Never map two src EditText to the same tgt EditText, e.g., a51-a52-b52
@@ -570,9 +572,9 @@ class Explorer:
         return new_candidates
 
 
-def start(config_id, appium_port, udid):
-    LOAD_SNAPSHOT = True
-    # LOAD_SNAPSHOT = False
+def start(config_id, appium_port, udid, logfile):
+    # LOAD_SNAPSHOT = True
+    LOAD_SNAPSHOT = False
     if os.path.exists(os.path.join(SNAPSHOT_FOLDER, config_id + '.pkl')) and LOAD_SNAPSHOT:
         with open(os.path.join(SNAPSHOT_FOLDER, config_id + '.pkl'), 'rb') as f:
             explorer = pickle.load(f)
@@ -603,7 +605,7 @@ def start(config_id, appium_port, udid):
             # explorer.f_target = 0.55
 
     else:
-        explorer = Explorer(config_id, appium_port, udid)
+        explorer = Explorer(config_id, appium_port, udid, logfile)
     t_start = time.time()
     # explorer.mutate_src_action({'long_press': 'swipe_right', 'swipe_right': 'long_press'})
     is_done, failed_step = explorer.run()
@@ -624,9 +626,11 @@ def start(config_id, appium_port, udid):
             print(f'Testing time in sec: {time.time() - t_start}')
         except Exception as excep:
             print(f'Error when validating learned actions\n{excep}')
+            explorer.logfile.write(traceback.format_exc())
     else:
         print(f'Failed transfer at source index {failed_step}')
         print(f'Transfer time in sec: {time.time() - t_start}')
+        explorer.logfile.write(f'Error without exception: Failed transfer at source index {failed_step}')
         results = explorer.tgt_events
     Util.save_events(results, config_id)
 
@@ -643,5 +647,5 @@ if __name__ == '__main__':
         # lookahead_step = 1
         appium_port = '5723'
         udid = 'emulator-5556'
-
-    start(config_id, appium_port, udid)
+    logfile = open('log.txt', 'w')
+    start(config_id, appium_port, udid, logfile)

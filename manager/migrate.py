@@ -29,7 +29,8 @@ def craftdroid_process(migration):
     logfile = open(get_log_file_path(migration), 'w')
     config_id = '-'.join([migration['src'], migration['target'], migration['task']])
     try:
-        Explorer.start(config_id, config.appium_port, config.emulator)
+        Explorer.start(config_id, config.appium_port, config.emulator, logfile)
+        logfile.close()
     except Exception:
         trace = traceback.format_exc()
         logfile.write(trace)
