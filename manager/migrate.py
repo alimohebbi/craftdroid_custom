@@ -1,9 +1,5 @@
 import multiprocessing
-import subprocess
-import sys
-import time
 import traceback
-from threading import Timer
 
 import Explorer
 from config import Config
@@ -19,30 +15,31 @@ def write_file(input_text, log_file):
     f.close()
 
 
-def kill(process):
-    process[0].kill()
-    print('killed')
-    print(process[1]['src'] + ' to ' + process[1]['target'])
+def log_killed_process(logfile):
+    message = 'Timeout Error: **** Migration is killed ****'
+    print(message)
+    logfile.write(message)
 
 
-def craftdroid_process(migration):
-    logfile = open(get_log_file_path(migration), 'w')
+def craftdroid_process(migration, logfile):
     config_id = '-'.join([migration['src'], migration['target'], migration['task']])
     try:
         Explorer.start(config_id, config.appium_port, config.emulator, logfile)
-        logfile.close()
     except Exception:
         trace = traceback.format_exc()
         logfile.write(trace)
-        logfile.close()
         traceback.print_exc()
 
 
 def run_craftdroid(migration):
-    p = multiprocessing.Process(target=craftdroid_process, name="Start", args=(migration,))
+    logfile = open(get_log_file_path(migration), 'w')
+    p = multiprocessing.Process(target=craftdroid_process, name="Start", args=(migration, logfile))
     p.start()
     p.join(config.migration_timeout)
+    if p.exitcode is None:
+        log_killed_process(logfile)
     p.kill()
+    logfile.close()
 
 
 def migration_process(migration_df, i):
