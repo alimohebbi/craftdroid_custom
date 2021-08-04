@@ -73,8 +73,8 @@
   {
     "class": "android.view.View",
     "resource-id": "",
-    "text": "",
     "content-desc": "Donald Bren School of Information and Computer Sciences",
+    "text": "",
     "clickable": "true",
     "password": "false",
     "parent_text": "",
@@ -113,8 +113,8 @@
   {
     "class": "android.view.View",
     "resource-id": "",
+    "content-desc": "University of California, Irvine",
     "text": "",
-    "content-desc": "UCI homepage",
     "clickable": "true",
     "password": "false",
     "parent_text": "",
@@ -128,7 +128,7 @@
       "wait_until_element_presence",
       10,
       "xpath",
-      "//android.view.View[@content-desc=\"UCI homepage\"]"
+      "//android.view.View[@text=\"University of California, Irvine\"]"
     ]
   },
   {
@@ -141,8 +141,8 @@
   {
     "class": "android.view.View",
     "resource-id": "",
-    "text": "",
     "content-desc": "Donald Bren School of Information and Computer Sciences",
+    "text": "",
     "clickable": "true",
     "password": "false",
     "parent_text": "",
