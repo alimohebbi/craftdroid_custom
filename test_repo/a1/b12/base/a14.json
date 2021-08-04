@@ -128,7 +128,7 @@
       "wait_until_element_presence",
       10,
       "xpath",
-      "//android.view.View[@text=\"University of California, Irvine\"]"
+      "//android.view.View[@content-desc=\"University of California, Irvine\"]"
     ]
   },
   {
