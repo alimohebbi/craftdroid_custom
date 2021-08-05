@@ -1,0 +1,41 @@
+{
+    "browser_item": {
+        "close_tb_button": "btn_toolbar_stop_loading_normal",
+        "tab_icon": "ic_new_window_holo_dark"
+    },
+    "abc_action_bar_title_item": {
+        "up": "?homeAsUpIndicator"
+    },
+    "abc_search_view": {
+        "search_button": "?searchViewSearchIcon",
+        "search_mag_icon": "?searchViewSearchIcon",
+        "search_close_btn": "?searchViewCloseIcon",
+        "search_go_btn": "?searchViewGoIcon",
+        "search_voice_btn": "?searchViewVoiceIcon"
+    },
+    "abc_search_dropdown_item_icons_2line": {
+        "edit_query": "?searchViewEditQuery"
+    },
+    "bookmark_item_dark": {
+        "bookmark_icon": "ic_collections_view_as_list"
+    },
+    "browser_bar": {
+        "backdrop": "round_edges_less",
+        "browser_back": "back",
+        "browser_forward": "forward",
+        "browser_refresh": "btn_toolbar_reload_normal",
+        "browser_bookmark": "btn_omnibox_bookmark_normal"
+    },
+    "abc_action_bar_home": {
+        "up": "?homeAsUpIndicator"
+    },
+    "browser_bar_with_bg": {
+        "browser_back": "back",
+        "browser_forward": "forward",
+        "browser_refresh": "btn_toolbar_reload_normal",
+        "browser_bookmark": "btn_omnibox_bookmark_normal"
+    },
+    "bookmark_item": {
+        "bookmark_icon": "ic_collections_view_as_list"
+    }
+}
