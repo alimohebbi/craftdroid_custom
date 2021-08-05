@@ -298,7 +298,8 @@ class WidgetUtil:
         actionable_widget, target_labels = separate_actionable_label(src_event, dynamic_widgets)
         similars = WidgetUtil.score_widgets(src_event, actionable_widget, target_labels, src_labels)
         add_static_flag(actionable_widget, target_labels)
-        similars.extend(WidgetUtil.score_widgets(src_event, static_widgets, None, src_labels))
+        static_actionable_widget, _ = separate_actionable_label(src_event, static_widgets)
+        similars.extend(WidgetUtil.score_widgets(src_event, static_actionable_widget, None, src_labels))
         similars.sort(key=lambda x: x[1], reverse=True)
         return similars
 

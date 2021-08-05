@@ -122,8 +122,10 @@ class Explorer:
                 if not tgt_event:
                     try:
                         dom, pkg, act = self.execute_target_events([])
-                    except:  # selenium.common.exceptions.NoSuchElementException
+                    except Exception as e:  # selenium.common.exceptions.NoSuchElementException
                         # a23-a21-b21, a24-a21-b21: selected an EditText which is not editable
+                        print(10 * '*' + ' Error may not be important ' + 10 * '*')
+                        self.send_exp_to_output(e)
                         print(f'Backtrack to the previous step due to an exception in execution.')
                         invalid_event = self.tgt_events[-1]
                         self.current_src_index -= 1
@@ -181,9 +183,7 @@ class Explorer:
                         try:
                             match = self.check_reachability(w, pkg, act)
                         except Exception as excep:
-                            print(excep)
-                            traceback.print_exc()
-                            self.logfile.write(traceback.format_exc())
+                            self.send_exp_to_output(excep)
                             return False, self.current_src_index
                         if match:
                             # Never map two src EditText to the same tgt EditText, e.g., a51-a52-b52
@@ -211,7 +211,7 @@ class Explorer:
                                         else:
                                             self.tgt_events = self.tgt_events[:self.idx_src_to_tgt[src_idx - 1] + 1]
                                         break
-                            if 'clickable' not in w:  # a static widget
+                            if 'clickable' not in w or 'static' in w:  # a static widget
                                 self.widget_db.pop(WidgetUtil.get_widget_signature(w), None)
                             if src_event['action'][0] == 'wait_until_text_invisible':
                                 if self.runner.check_text_invisible(src_event):
@@ -263,6 +263,12 @@ class Explorer:
                 self.f_prev_target = -1
 
         return True, 0
+
+    def send_exp_to_output(self, excep):
+        print(excep)
+        traceback.print_exc()
+        self.logfile.write(traceback.format_exc())
+        self.logfile.flush()
 
     def reset_and_explore(self, tgt_events=[]):
         """Reset current state to the one after executing tgt_events
@@ -408,7 +414,7 @@ class Explorer:
                 if w_id.startswith('D@'):  # from dynamic exploration
                     # e.g., 'D@class=android.widget.Button&resource-id=org.secuso.privacyfriendlytodolist:id/btn_skip&text=Skip&content-desc='
                     kv_pairs = w_id[2:].split('&')
-                    kv = [kvp.split('=') for kvp in kv_pairs]
+                    kv = [CallGraphParser.get_key_value_as_list(kvp) for kvp in kv_pairs]
                     criteria = {k: v for k, v in kv}
                     print('D@criteria:', criteria)
                     w_stepping = WidgetUtil.locate_widget(self.runner.get_page_source(), criteria)

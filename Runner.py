@@ -110,7 +110,10 @@ class Runner:
                 # e.g., ["wait_until_element_invisible", 10, "xpath", "//android.widget.TextView[@text='Sample Todo']"]
                 # e.g., ["wait_until_text_presence", 10, "text", "65.09"]
                 # e.g., ["wait_until_text_invisible", 10, "text", "Sample Todo"]
-                wait_time, selector_type, selector = action['action'][1:]
+                if len(action['action']) == 4:
+                    wait_time, selector_type, selector = action['action'][1:]
+                else:
+                    wait_time, selector_type, selector = action['action'][1], action['action'][4], action['action'][5]
                 locator = None
                 if selector_type == 'xpath':
                     locator = (MobileBy.XPATH, selector)
@@ -153,50 +156,8 @@ class Runner:
                     else:
                         ele.click()
                 elif 'send_keys' in action['action'][0]:
-                    value_for_input = action['action'][1]
-                    # if sending email (for registration), get a new one
-                    if StrUtil.is_contain_email(value_for_input) and value_for_input != self.databank.get_login_email():
-                        if is_for_confirm:
-                            value_for_input = self.databank.get_temp_email(renew=False)
-                        else:
-                            value_for_input = self.databank.get_temp_email()
-                            is_for_confirm = True
-                    # all possible cases: 'clear_and_send_keys', 'clear_and_send_keys_and_hide_keyboard',
-                    # 'send_keys_and_hide_keyboard', 'send_keys_and_enter', 'send_keys'
-                    if action['action'][0].startswith('clear'):
-                        ele.clear()
-                    ele.send_keys(value_for_input)
-                    if action['action'][0].endswith('hide_keyboard'):
-                        ele.click()
-                        self.hide_keyboard()
-                    elif action['action'][0].endswith('enter'):
-                        self.driver.press_keycode(66)  # AndroidKeyCode for 'Enter'
-                # elif action['action'][0] == 'clear_and_send_keys':
-                #     ele.clear()
-                #     ele.send_keys(action['action'][1])
-                # elif action['action'][0] == 'clear_and_send_keys_and_hide_keyboard':
-                #     ele.clear()
-                #     ele.send_keys(action['action'][1])
-                #     ele.click()
-                #     self.hide_keyboard()
-                # elif action['action'][0] == 'send_keys_and_hide_keyboard':
-                #     ele.send_keys(action['action'][1])
-                #     ele.click()
-                #     self.hide_keyboard()
-                # elif action['action'][0] == 'send_keys_and_enter':
-                #     ele.send_keys(action['action'][1])
-                #     self.driver.press_keycode(66)  # AndroidKeyCode for 'Enter'
-                # elif 'send_keys' in action['action'][0]:  # 'send_keys', 'clear_and_send_keys'
-                #     # if sending email (for registration), get a new one
-                #     if StrUtil.is_contain_email(action['action'][1]) \
-                #             and action['action'][1] != self.databank.get_login_email():
-                #         if is_for_confirm:
-                #             ele.send_keys(self.databank.get_temp_email(renew=False))
-                #         else:
-                #             ele.send_keys(self.databank.get_temp_email())
-                #             is_for_confirm = True
-                #     else:
-                #         ele.send_keys(action['action'][1])
+                    self.perform_send_keys(action, ele, is_for_confirm)
+
                 elif action['action'][0] == 'swipe_right':
                     rect = ele.rect  # e.g., {'x': 202, 'y': 265, 'width': 878, 'height': 57}
                     start_x, start_y, end_x, end_y = rect['x'] + rect['width'] / 4, rect['y'] + rect['height'] / 2, \
@@ -216,6 +177,27 @@ class Runner:
         else:
             # time.sleep(self.act_interval/2)
             time.sleep(self.act_interval)
+
+    def perform_send_keys(self, action, ele, is_for_confirm):
+        value_for_input = action['action'][1]
+        # if sending email (for registration), get a new one
+        if StrUtil.is_contain_email(value_for_input) and value_for_input != self.databank.get_login_email():
+            if is_for_confirm:
+                value_for_input = self.databank.get_temp_email(renew=False)
+            else:
+                value_for_input = self.databank.get_temp_email()
+                is_for_confirm = True
+        # all possible cases: 'clear_and_send_keys', 'clear_and_send_keys_and_hide_keyboard',
+        # 'send_keys_and_hide_keyboard', 'send_keys_and_enter', 'send_keys'
+        if action['action'][0].startswith('clear'):
+            ele.clear()
+        ele.send_keys(value_for_input)
+        if action['action'][0].endswith('hide_keyboard'):
+            ele.click()
+            self.hide_keyboard()
+        elif action['action'][0].endswith('enter'):
+            ele.click()
+            self.driver.press_keycode(66)  # AndroidKeyCode for 'Enter'
 
     def get_web_element(self, action):
         ele = None

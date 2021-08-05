@@ -1,17 +1,16 @@
-#model_dir: "/home/amohebbi/models/"
+root: "/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/"
 apks_dir: "/Users/usiusi/Documents/Repositories/Craftdroid/subject_apps"
-decompile_temp: '/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/apk_decompiled_temp'
-image_repo: '/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/image_file_name_repo'
-sm_conf_path: '/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/matching_client/sm_config'
+decompile_temp: 'apk_decompiled_temp'
+image_repo: 'image_file_name_repo'
+sm_conf_path: 'matching_client/sm_config'
 
 emulator: "emulator2"
-appium_port: 5723
+appium_port: '4723'
 migration_plan_path: "manager/migrations.csv"
 results: "manager/results.csv"
-root: "/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/"
 migration_log_dir: "log"
 generated_dir: "manager/generated"
-migration_timeout: 3600
+migration_timeout: 7200
 embedding:
 #  - wm
   - w2v

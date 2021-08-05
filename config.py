@@ -16,19 +16,15 @@ class Config(object):
 
     @property
     def sm_conf_path(self):
-        return self._get_property('sm_conf_path')
+        return self.root + self._get_property('sm_conf_path')
 
     @property
     def decompile_temp(self):
-        return self._get_property('decompile_temp')
+        return self.root + self._get_property('decompile_temp')
 
     @property
     def image_repo(self):
-        return self._get_property('image_repo')
-
-    @property
-    def train_sets(self):
-        return self._get_property('train_set')
+        return self.root + self._get_property('image_repo')
 
     @property
     def embedding(self):
@@ -61,10 +57,6 @@ class Config(object):
     @property
     def emulator(self):
         return self._get_property('emulator')
-
-    @property
-    def clean_file(self):
-        return self._get_property('clean_file')
 
     @property
     def migration_log_dir(self):

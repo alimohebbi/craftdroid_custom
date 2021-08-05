@@ -9,6 +9,7 @@ from StrUtil import StrUtil
 from WidgetUtil import WidgetUtil
 
 
+
 class CallGraphParser:
     """
     It is not clear how the graph is created. just it reads a graph from file.
@@ -189,6 +190,13 @@ class CallGraphParser:
         for k in discarded_keys:
             gui_paths.pop(k, None)
 
+    @staticmethod
+    def get_key_value_as_list(kvp):
+        key = kvp[:kvp.find('=')]
+        value = kvp[kvp.find('=')+1:]
+        return [key,  value]
+
+
     @classmethod
     def is_naf_only_widget(cls, hop):
         # e.g., 'D@text=&class=android.widget.ImageButton&content-desc=&resource-id=&naf=true (onClick)'
@@ -196,7 +204,7 @@ class CallGraphParser:
             return False
         hop = ' '.join(hop.split()[:-1])
         kv_pairs = hop[2:].split('&')
-        kv = [kvp.split('=') for kvp in kv_pairs]
+        kv = [CallGraphParser.get_key_value_as_list(kvp) for kvp in kv_pairs]
         # e.g., [['text', 'Art '], [' Collectibles'], ['class', 'android.widget.TextView']]
         curated_kv = []
         for pairs in kv:
