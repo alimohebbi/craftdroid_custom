@@ -73,7 +73,7 @@
   {
     "class": "android.view.View",
     "resource-id": "",
-    "content-desc": "Donald Bren School of Information and Computer Sciences",
+    "content-desc": "UCI Donald Bren School of Information and Computer Sciences - logo",
     "text": "",
     "clickable": "true",
     "password": "false",
@@ -88,7 +88,7 @@
       "wait_until_element_presence",
       10,
       "xpath",
-      "//android.view.View[@content-desc=\"Donald Bren School of Information and Computer Sciences\"]"
+      "//android.view.View[@content-desc=\"UCI Donald Bren School of Information and Computer Sciences - logo\"]"
     ]
   },
   {
@@ -141,7 +141,7 @@
   {
     "class": "android.view.View",
     "resource-id": "",
-    "content-desc": "Donald Bren School of Information and Computer Sciences",
+    "content-desc": "UCI Donald Bren School of Information and Computer Sciences - logo",
     "text": "",
     "clickable": "true",
     "password": "false",
@@ -156,7 +156,7 @@
       "wait_until_element_presence",
       10,
       "xpath",
-      "//android.view.View[@content-desc=\"Donald Bren School of Information and Computer Sciences\"]"
+      "//android.view.View[@content-desc=\"UCI Donald Bren School of Information and Computer Sciences - logo\"]"
     ]
   }
 ]
