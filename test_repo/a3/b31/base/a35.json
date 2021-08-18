@@ -190,7 +190,7 @@
     "event_type": "gui",
     "action": [
       "send_keys",
-      "1qaz2wsX"
+      "1qaz2ws"
     ]
   },
   {
@@ -266,23 +266,6 @@
     "action": [
       "click"
     ]
-  },
-  {
-    "class": "android.widget.Button",
-    "resource-id": "com.yelp.android:id/signup_button",
-    "text": "Sign Up",
-    "content-desc": "",
-    "clickable": "true",
-    "password": "false",
-    "parent_text": "",
-    "sibling_text": "I agree to Yelp's Terms of Service and confirm that I have read Yelp's Privacy Policy.",
-    "tid": "a35",
-    "package": "com.yelp.android",
-    "activity": ".ui.activities.ActivityCreateAccount",
-    "ignorable": "false",
-    "event_type": "gui",
-    "action": [
-      "click"
-    ]
   }
+
 ]

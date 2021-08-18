@@ -1,7 +1,7 @@
 venv
 venv2
 w2v_sim_cache.pkl
-
+__pycache__
 .idea
 test_repo/**/generated
 apk_decompiled_temp

@@ -27,6 +27,10 @@ class Config(object):
         return self.root + self._get_property('image_repo')
 
     @property
+    def train_sets(self):
+        return self._get_property('train_set')
+
+    @property
     def embedding(self):
         return self._get_property('embedding')
 

@@ -1,28 +1,6 @@
 [
   {
     "class": "android.widget.TextView",
-    "resource-id": "park.outlook.sign.in.client:id/subject",
-    "text": "Another rabbit hole",
-    "content-desc": "",
-    "clickable": "true",
-    "password": "false",
-    "naf": "",
-    "parent_text": "",
-    "sibling_text": "",
-    "stepping_events": [],
-    "package": "park.outlook.sign.in.client",
-    "activity": "ru.mail.ui.SlideStackActivity",
-    "event_type": "oracle",
-    "score": 0.3618140900919906,
-    "action": [
-      "wait_until_text_presence",
-      10,
-      "text",
-      "Another rabbit hole"
-    ]
-  },
-  {
-    "class": "android.widget.TextView",
     "resource-id": "park.outlook.sign.in.client:id/toolbar_action_search",
     "text": "",
     "content-desc": "Search",

@@ -1,28 +1,6 @@
 [
   {
     "class": "android.widget.TextView",
-    "resource-id": "ru.mail.mailapp:id/subject",
-    "text": "Another rabbit hole",
-    "content-desc": "",
-    "clickable": "true",
-    "password": "false",
-    "naf": "",
-    "parent_text": "",
-    "sibling_text": "",
-    "tid": "a43",
-    "package": "ru.mail.mailapp",
-    "activity": "ru.mail.ui.SlideStackActivity",
-    "ignorable": "false",
-    "event_type": "oracle",
-    "action": [
-      "wait_until_text_presence",
-      10,
-      "text",
-      "Another rabbit hole"
-    ]
-  },
-  {
-    "class": "android.widget.TextView",
     "resource-id": "ru.mail.mailapp:id/toolbar_action_search",
     "text": "",
     "content-desc": "Search",
