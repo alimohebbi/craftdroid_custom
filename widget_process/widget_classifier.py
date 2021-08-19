@@ -49,10 +49,10 @@ def has_static_class(w):
 
 
 def is_clickable(w):
-    if w['clickable'] and w['clickable'] == 'true':
+    if 'clickable' in w and w['clickable'] == 'true':
         return True
-    if w['long-clickable'] and w['long-clickable'] == 'true':
+    if 'long-clickable' in w and w['long-clickable'] == 'true':
         return True
-    if w['checkable'] and w['checkable'] == 'true':
+    if 'checkable' in w and w['checkable'] == 'true':
         return True
     return False

@@ -265,7 +265,6 @@ class Explorer:
         return True, 0
 
     def send_exp_to_output(self, excep):
-        print(excep)
         traceback.print_exc()
         self.logfile.write(traceback.format_exc())
         self.logfile.flush()
@@ -614,7 +613,11 @@ def start(config_id, appium_port, udid, logfile):
         explorer = Explorer(config_id, appium_port, udid, logfile)
     t_start = time.time()
     # explorer.mutate_src_action({'long_press': 'swipe_right', 'swipe_right': 'long_press'})
-    is_done, failed_step = explorer.run()
+    try:
+        is_done, failed_step = explorer.run()
+    except Exception as exp:
+        explorer.send_exp_to_output(exp)
+        return
     if is_done:
         print('Finished. Learned actions')
         if explorer.f_prev_target > explorer.f_target:
