@@ -194,6 +194,7 @@ class Runner:
         ele.send_keys(value_for_input)
         if action['action'][0].endswith('hide_keyboard'):
             ele.click()
+            time.sleep(2)
             self.hide_keyboard()
         elif action['action'][0].endswith('enter'):
             ele.click()
