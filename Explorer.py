@@ -125,7 +125,7 @@ class Explorer:
                     except Exception as e:  # selenium.common.exceptions.NoSuchElementException
                         # a23-a21-b21, a24-a21-b21: selected an EditText which is not editable
                         print(10 * '*' + ' Error may not be important ' + 10 * '*')
-                        self.send_exp_to_output(e)
+                        self.send_exp_to_output(self.logfile)
                         print(f'Backtrack to the previous step due to an exception in execution.')
                         invalid_event = self.tgt_events[-1]
                         self.current_src_index -= 1
@@ -183,7 +183,7 @@ class Explorer:
                         try:
                             match = self.check_reachability(w, pkg, act)
                         except Exception as excep:
-                            self.send_exp_to_output(excep)
+                            self.send_exp_to_output(self.logfile)
                             return False, self.current_src_index
                         if match:
                             # Never map two src EditText to the same tgt EditText, e.g., a51-a52-b52
@@ -264,10 +264,11 @@ class Explorer:
 
         return True, 0
 
-    def send_exp_to_output(self, excep):
+    @staticmethod
+    def send_exp_to_output(logfile):
         traceback.print_exc()
-        self.logfile.write(traceback.format_exc())
-        self.logfile.flush()
+        logfile.write(traceback.format_exc())
+        logfile.flush()
 
     def reset_and_explore(self, tgt_events=[]):
         """Reset current state to the one after executing tgt_events
@@ -578,45 +579,12 @@ class Explorer:
 
 
 def start(config_id, appium_port, udid, logfile):
-    # LOAD_SNAPSHOT = True
-    LOAD_SNAPSHOT = False
-    if os.path.exists(os.path.join(SNAPSHOT_FOLDER, config_id + '.pkl')) and LOAD_SNAPSHOT:
-        with open(os.path.join(SNAPSHOT_FOLDER, config_id + '.pkl'), 'rb') as f:
-            explorer = pickle.load(f)
-            # for n in explorer.cgp.G.nodes:
-            #     print(n)
-            # for e in explorer.cgp.G.edges:
-            #     print(e, explorer.cgp.G.edges[e]['label'])
-            # for k, v in explorer.cgp.self_loops.items():
-            #     print(k)
-            #     for l in v:
-            #         print(l)
-            print(f'Snapshot loaded. Cached target events (fitness: {explorer.f_target}):')
-            for e in explorer.tgt_events:
-                print(e)
-            print(f'Prev target events (fitness: {explorer.f_prev_target})')
-            for e in explorer.prev_tgt_events:
-                print(e)
-            print(f'Widget DB ({len(explorer.widget_db)})')
-            for k, v in explorer.widget_db.items():
-                print(k, v)
-            print(f'# nodes: {len(explorer.cgp.G.nodes)}, # edges: {len(explorer.cgp.G.edges)}')
-            print(f'self loops: {explorer.cgp.self_loops}')
-            print(explorer.skipped_match)
-            print(explorer.nearest_button_to_text)
-            # input()
-            explorer.runner = Runner(explorer.config.pkg_to, explorer.config.act_to, explorer.config.no_reset,
-                                     appium_port, udid)
-            # explorer.f_target = 0.55
-
-    else:
-        explorer = Explorer(config_id, appium_port, udid, logfile)
     t_start = time.time()
-    # explorer.mutate_src_action({'long_press': 'swipe_right', 'swipe_right': 'long_press'})
     try:
+        explorer = Explorer(config_id, appium_port, udid, logfile)
         is_done, failed_step = explorer.run()
     except Exception as exp:
-        explorer.send_exp_to_output(exp)
+        Explorer.send_exp_to_output(logfile)
         return
     if is_done:
         print('Finished. Learned actions')
