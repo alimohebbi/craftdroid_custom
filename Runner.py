@@ -191,14 +191,18 @@ class Runner:
         # 'send_keys_and_hide_keyboard', 'send_keys_and_enter', 'send_keys'
         if action['action'][0].startswith('clear'):
             ele.clear()
-        ele.send_keys(value_for_input)
         if action['action'][0].endswith('hide_keyboard'):
             ele.click()
+            ele.set_value(value_for_input)
             time.sleep(2)
             self.hide_keyboard()
         elif action['action'][0].endswith('enter'):
             ele.click()
+            ele.set_value(value_for_input)
             self.driver.press_keycode(66)  # AndroidKeyCode for 'Enter'
+        else:
+            ele.set_value(value_for_input)
+
 
     def get_web_element(self, action):
         ele = None
