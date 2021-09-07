@@ -2,9 +2,11 @@ import os
 import subprocess
 from time import sleep
 
-emulator_process = None
+from config import Config
 
-command = ['emulator', '-ports', ' 5554,5555', '-avd', 'emulator2', '-no-audio',
+emulator_process = None
+config = Config()
+command = ['emulator', '-ports', ' 5554,5555', '-avd', config.emulator, '-no-audio',
            '-no-window',
            '-no-snapshot-load'
            ]
