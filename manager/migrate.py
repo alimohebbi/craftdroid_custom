@@ -50,4 +50,4 @@ def migration_process(migration_df, i):
     run_craftdroid(row)
     err_exist, test_exist = post_migration(row)
     migration_df.at[i, 'error'] = err_exist
-    migration_df.at[i, 'test_exist'] = str(test_exist)
+    migration_df.at[i, 'test_exist'] = test_exist

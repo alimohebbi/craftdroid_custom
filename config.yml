@@ -1,34 +1,34 @@
-root: "/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/"
+root: "/root/test-reuse/Craftdroid-Modified/"
 apks_dir: "/Users/usiusi/Documents/Repositories/Craftdroid/subject_apps"
 decompile_temp: 'apk_decompiled_temp'
 image_repo: 'image_file_name_repo'
 sm_conf_path: 'matching_client/sm_config'
 
-emulator: "emulator2"
+emulator: "emulator1"
 appium_port: '4723'
 migration_plan_path: "manager/migrations.csv"
 results: "manager/results.csv"
 migration_log_dir: "log"
 generated_dir: "manager/generated"
-migration_timeout: 7200
+migration_timeout: 18000
 embedding:
-  - wm
+#  - wm
 #  - w2v
 #  - nnlm
 #  - use
 #  - bert
-#  - glove
+  - glove
 #  - fast
 #  - jaccard
-#  - edit_distance
+  - edit_distance
 train_set:
-  #  - android
-  #  - blogs
-  #  - standard
-  #  - empty
+#  - android
+#  - blogs
+#  - standard
+#  - empty
   - googleplay
 algorithm:
-  #  - craftdroid
+#  - craftdroid
   - custom
 #  - atm_0
 descriptors:
