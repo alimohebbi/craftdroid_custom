@@ -1,1 +1,1 @@
-{"descriptors": "atm", "word_embedding": "w2v", "training_set": "googleplay", "algorithm": "custom", "app_pair": "craftdroid"}
+{"algorithm": "custom", "descriptors": "atm", "training_set": "googleplay", "word_embedding": "wm", "app_pair": "craftdroid"}

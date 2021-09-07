@@ -3,6 +3,7 @@ import traceback
 
 import Explorer
 from config import Config
+from .emulator import start_emulator
 from .post import post_migration, get_log_file_path
 from .pre import prepare_for_migration
 
@@ -45,6 +46,7 @@ def run_craftdroid(migration):
 def migration_process(migration_df, i):
     row = migration_df.iloc[i]
     prepare_for_migration(row)
+    start_emulator()
     run_craftdroid(row)
     err_exist, test_exist = post_migration(row)
     migration_df.at[i, 'error'] = err_exist

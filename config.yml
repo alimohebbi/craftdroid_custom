@@ -12,8 +12,8 @@ migration_log_dir: "log"
 generated_dir: "manager/generated"
 migration_timeout: 7200
 embedding:
-#  - wm
-  - w2v
+  - wm
+#  - w2v
 #  - nnlm
 #  - use
 #  - bert
