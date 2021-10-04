@@ -45,13 +45,8 @@ def find_test_file(migration):
     return None
 
 
-def move_test_file(migration, test_file_path):
-    sub_dir = config_str(migration)
-    full_dir = config.generated_dir + '/' + sub_dir
-    dir_for_migration = full_dir + '/' + migration['src'] + '-' + migration['target'] + '-' + migration['task']
-    os.makedirs(dir_for_migration, exist_ok=True)
-    file_name = ntpath.basename(test_file_path)
-    destination_path = dir_for_migration + '/' + file_name
+def move_test_file(test_file_path):
+    destination_path = str(test_file_path).replace('generated', 'base')
     shutil.move(str(test_file_path), destination_path)
 
 
@@ -60,6 +55,6 @@ def post_migration(migration):
     test_file_path = find_test_file(migration)
     test_exist = False
     if test_file_path:
-        move_test_file(migration, test_file_path)
+        move_test_file(test_file_path)
         test_exist = True
     return err_exist, test_exist

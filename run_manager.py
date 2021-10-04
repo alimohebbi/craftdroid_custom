@@ -39,9 +39,9 @@ def is_config_in_sample(semantic_config):
     samples = pd.read_csv(config.config_samples)
     return ((samples['word_embedding'] == semantic_config['word_embedding']) & (
             samples['training_set'] == semantic_config['training_set']) &
-     (samples['algorithm'] == semantic_config['algorithm']) &
-     (samples['descriptors'] == semantic_config['descriptors'])
-     ).any()
+            (samples['algorithm'] == semantic_config['algorithm']) &
+            (samples['descriptors'] == semantic_config['descriptors'])
+            ).any()
 
 
 def first_round_migration():
@@ -85,24 +85,54 @@ def get_results():
         return pd.DataFrame(columns=columns)
 
 
-if __name__ == '__main__':
+src_index = 0
+target_index = 1
+
+
+def get_subjects():
     migration_subjects = load_migrations()
+    if target_index > migration_subjects.shape[0]:
+        return None
+    subject = {}
+    subject['src'] = migration_subjects.iloc[src_index]['src']
+    subject['target'] = migration_subjects.iloc[target_index]['src']
+    subject['task'] = migration_subjects.iloc[target_index]['task']
+    return subject
+
+
+def update_subject_index():
+    global src_index, target_index
+    if forbidden_config(sm_config) or not is_config_in_sample(sm_config):
+        return
+    row_index = find_or_create()
+    if bool(results.iloc[row_index]['test_exist']):
+        src_index = target_index
+    target_index += 1
+
+
+if __name__ == '__main__':
     results = get_results()
     results.fillna('', inplace=True)
     for embedding in config.embedding:
         for train_set in config.train_sets:
             for algorithm in config.algorithm:
                 for descriptors in config.descriptors:
-                    for i, subjects in migration_subjects.iterrows():
-                        sm_config = {'word_embedding': embedding,
-                                     'training_set': train_set,
-                                     'algorithm': algorithm,
-                                     'descriptors': descriptors,
-                                     'src': subjects['src'],
-                                     'target': subjects['target'],
-                                     'task': subjects['task'],
-                                     'error': '',
-                                     'test_exist': ''}
+                    sm_config = {'word_embedding': embedding,
+                                 'training_set': train_set,
+                                 'algorithm': algorithm,
+                                 'descriptors': descriptors,
+                                 'error': '',
+                                 'test_exist': ''}
+                    if forbidden_config(sm_config) or not is_config_in_sample(sm_config):
+                        continue
+                    subjects = get_subjects()
+                    while subjects is not None:
+                        sm_config['src'] = subjects['src']
+                        sm_config['target'] = subjects['target']
+                        sm_config['task'] = subjects['task']
                         first_round_migration()
                         redo_failed_migaratoins()
+                        update_subject_index()
+                        subjects = get_subjects()
                         results.to_csv(config.results, index=False)
+
