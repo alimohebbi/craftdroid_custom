@@ -1,1 +1,3 @@
 word_embedding,training_set,algorithm,descriptors,src,target,task,error,test_exist
+wm,googleplay,custom,atm,a61,a62,b61,True,False
+wm,googleplay,custom,atm,a61,a64,b61,True,False
