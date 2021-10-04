@@ -46,9 +46,9 @@ def run_craftdroid(migration):
 def migration_process(migration_df, i):
     row = migration_df.iloc[i]
     prepare_for_migration(row)
-    # start_emulator()
+    start_emulator()
     run_craftdroid(row)
-    # stop_emulator()
+    stop_emulator()
     err_exist, test_exist = post_migration(row)
     migration_df.at[i, 'error'] = err_exist
     migration_df.at[i, 'test_exist'] = test_exist
