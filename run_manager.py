@@ -91,7 +91,7 @@ target_index = 1
 
 def get_subjects():
     migration_subjects = load_migrations()
-    if target_index > migration_subjects.shape[0]:
+    if target_index >= migration_subjects.shape[0]:
         return None
     subject = {}
     subject['src'] = migration_subjects.iloc[src_index]['src']
@@ -133,6 +133,5 @@ if __name__ == '__main__':
                         first_round_migration()
                         redo_failed_migaratoins()
                         update_subject_index()
-                        subjects = get_subjects()
                         results.to_csv(config.results, index=False)
-
+                        subjects = get_subjects()
