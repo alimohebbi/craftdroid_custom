@@ -1,0 +1,25 @@
+{
+    "activity_tache": {
+        "imageButtonBackStartDate": "ic_action_backspace",
+        "imageButtonBackDeadline": "ic_action_backspace",
+        "imageButtonDelete": "ic_delete_black_24dp",
+        "imageViewNote": "ic_note",
+        "imageViewTag": "ic_tag_gris",
+        "imageViewFlag": "ic_flag_black_24dp"
+    },
+    "app_bar_activity_main": {
+        "fab": "ic_add_white_24dp"
+    },
+    "nav_header_activity_main": {
+        "imageView": "ic_launcher"
+    },
+    "rows_taches": {
+        "imageViewNote": "ic_note"
+    },
+    "row_tags": {
+        "imageView2": "ic_tag_gris"
+    },
+    "content_activity_main": {
+        "imgSun": "ic_wb_sunny_white_24dp"
+    }
+}
