@@ -47,6 +47,9 @@ def find_test_file(migration):
 
 def move_test_file(test_file_path):
     destination_path = str(test_file_path).replace('generated', 'base')
+    file_name = os.path.basename(destination_path)
+    change_name_to_target = file_name.split('-')[1] + '.json'
+    destination_path = destination_path.replace(file_name, change_name_to_target)
     shutil.move(str(test_file_path), destination_path)
 
 
