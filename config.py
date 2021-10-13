@@ -31,6 +31,10 @@ class Config(object):
         return self._get_property('train_set')
 
     @property
+    def config_samples(self):
+        return self._get_property('config_samples')
+
+    @property
     def embedding(self):
         return self._get_property('embedding')
 
