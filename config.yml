@@ -12,21 +12,21 @@ migration_log_dir: "log"
 generated_dir: "manager/generated"
 migration_timeout: 18000
 embedding:
-#  - wm
+  - wm
 #  - w2v
 #  - nnlm
 #  - use
 #  - bert
-  - glove
+#  - glove
 #  - fast
 #  - jaccard
-  - edit_distance
+#  - edit_distance
 train_set:
 #  - android
 #  - blogs
 #  - standard
 #  - empty
-  - googleplay
+#  - googleplay
 algorithm:
 #  - craftdroid
   - custom
