@@ -1,9 +1,10 @@
 root: "/root/test-reuse/Craftdroid-Modified/"
+#root: "/Users/usiusi/Documents/Repositories/Craftdroid/craft_custom/"
 apks_dir: "/Users/usiusi/Documents/Repositories/Craftdroid/subject_apps"
 decompile_temp: 'apk_decompiled_temp'
 image_repo: 'image_file_name_repo'
 sm_conf_path: 'matching_client/sm_config'
-
+config_samples: 'manager/config_sample.csv'
 emulator: "emulator1"
 appium_port: '4723'
 migration_plan_path: "manager/migrations.csv"
@@ -26,7 +27,7 @@ train_set:
 #  - blogs
 #  - standard
 #  - empty
-#  - googleplay
+  - googleplay
 algorithm:
 #  - craftdroid
   - custom
