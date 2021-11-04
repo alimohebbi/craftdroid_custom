@@ -13,10 +13,10 @@ class Configuration:
         for c in configs:
             if c['id'] == config_id:
                 self.id = config_id
-                self.no_reset = True if c['reset_data'] == 'False' else False
-                self.use_stopwords = False if c['use_stopwords'] == 'False' else True
-                self.expand_btn_to_text = False if c['expand_btn_to_text'] == 'False' else True
-                self.cross_check = False if c['cross_check'] == 'False' else True
+                self.no_reset = True if c['reset_data'].lower() == 'false' else False
+                self.use_stopwords = False if c['use_stopwords'].lower() == 'false' else True
+                self.expand_btn_to_text = False if c['expand_btn_to_text'].lower() == 'false' else True
+                self.cross_check = False if c['cross_check'].lower() == 'false' else True
                 self.pkg_from, self.act_from, self.pkg_to, self.act_to = Configuration.get_pkg_info(config_id)
         assert self.id, 'Invalid config_id'
 

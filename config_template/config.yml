@@ -14,26 +14,26 @@ generated_dir: "manager/generated"
 migration_timeout: 18000
 embedding:
   - wm
-#  - w2v
-#  - nnlm
-#  - use
-#  - bert
-#  - glove
-#  - fast
-#  - jaccard
-#  - edit_distance
+  - w2v
+  - nnlm
+  - use
+  - bert
+  - glove
+  - fast
+  - jaccard
+  - edit_distance
 train_set:
-#  - android
-#  - blogs
-#  - standard
-#  - empty
+  - android
+  - blogs
+  - standard
+  - empty
   - googleplay
 algorithm:
-#  - craftdroid
+  - craftdroid
   - custom
-#  - atm_0
+  - atm_0
 descriptors:
-  #  - union
-  #  - intersection
-  #  - craftdroid
+  - union
+  - intersection
+  - craftdroid
   - atm

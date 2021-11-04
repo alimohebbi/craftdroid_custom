@@ -10,3 +10,7 @@ apk_decompiled_temp
 comp-out
 manager/generated/
 log
+config.yml
+manager/config_sample.csv
+manager/migrations.csv
+manager/results.csv
