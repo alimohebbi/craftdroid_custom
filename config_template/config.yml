@@ -31,7 +31,7 @@ train_set:
 algorithm:
   - craftdroid
   - custom
-  - atm_0
+  - atm
 descriptors:
   - union
   - intersection
