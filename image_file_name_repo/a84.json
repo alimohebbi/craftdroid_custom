@@ -1,0 +1,15 @@
+{
+    "dialog_edit_item": {
+        "note": "ic_launcher_notepad_small"
+    },
+    "list_item_shopping_item_small": {
+        "nocheck": "ic_menu_add"
+    },
+    "list_item_shopping_item": {
+        "nocheck": "ic_menu_add"
+    },
+    "widget_check_items": {
+        "button_go_to_app": "ic_launcher_shoppinglist",
+        "button_go_to_preferences": "ic_menu_preferences"
+    }
+}

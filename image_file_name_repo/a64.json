@@ -1,0 +1,14 @@
+{
+    "view_summary_records": {
+        "iv_more": "ic_more"
+    },
+    "view_category_item": {
+        "iv_cancel": "ic_cancel"
+    },
+    "activity_edit_account": {
+        "fabDone": "ic_done"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    }
+}

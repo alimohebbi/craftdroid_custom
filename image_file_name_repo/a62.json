@@ -1,0 +1,15 @@
+{
+    "notification_media_cancel_action": {
+        "cancel_action": "ic_menu_close_clear_cancel"
+    },
+    "activity_history": {
+        "prev_button": "ic_navigate_before_black_48dp",
+        "next_button": "ic_navigate_next_black_48dp"
+    },
+    "line_for_list": {
+        "line_delete": "ic_mode_edit_black_24dp"
+    },
+    "activity_main": {
+        "fab": "ic_add"
+    }
+}

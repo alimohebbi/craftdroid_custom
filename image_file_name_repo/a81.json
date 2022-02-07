@@ -1,0 +1,26 @@
+{
+    "activity_login": {
+        "app_icon": "web_hi_res_128dp"
+    },
+    "notification_media_cancel_action": {
+        "cancel_action": "abc_ic_clear_mtrl_alpha"
+    },
+    "nav_header_main": {
+        "nav_imageview": "ic_launcher"
+    },
+    "activity_shopping_list_view": {
+        "fab": "ic_add_shopping_cart_white_24dp"
+    },
+    "abc_action_mode_close_item_material": {
+        "action_mode_close_button": "?actionModeCloseDrawable"
+    },
+    "listview_shoplists": {
+        "iconImageView": "ic_description_grey_24dp"
+    },
+    "activity_main": {
+        "fab": "ic_note_add_white_24dp"
+    },
+    "listview_item_list": {
+        "handler": "ic_reorder_grey_500_24dp"
+    }
+}

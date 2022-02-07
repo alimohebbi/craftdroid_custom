@@ -283,8 +283,12 @@ class WidgetUtil:
             if v:
                 v = v.replace('+', r'\+')  # for error when match special char '+'
                 v = v.replace('?', r'\?')  # for error when match special char '?'
+                v = v.replace('*', r'\*')  # for error when match special char '?'
                 # regex_cria[k] = re.compile(f'{v}$')
-                regex_cria[k] = re.compile(f'{v}')
+                try:
+                    regex_cria[k] = re.compile(f'{v}')
+                except:
+                    print('')
         if not regex_cria:
             return None
         soup = BeautifulSoup(dom, 'lxml')

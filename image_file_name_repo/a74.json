@@ -1,0 +1,48 @@
+{
+    "navdrawer_item": {
+        "navmenuitem_icon": "ic_launcher"
+    },
+    "note_list_item": {
+        "note_item_$_imageview_lock": "ic_action_device_access_secure",
+        "note_item_$_imageview_reminder": "ic_action_clock_dark"
+    },
+    "color_dropdown_item": {
+        "color_dropdown_item_$_drawable": "c00"
+    },
+    "settings": {
+        "settings_$_imageview_photo": "ic_user"
+    },
+    "main": {
+        "main_$_imageview_user": "ic_user"
+    },
+    "abs__action_bar_home": {
+        "abs__up": "?homeAsUpIndicator"
+    },
+    "abs__search_view": {
+        "abs__search_button": "?searchViewSearchIcon",
+        "abs__search_mag_icon": "?searchViewSearchIcon",
+        "abs__search_close_btn": "?searchViewCloseIcon",
+        "abs__search_go_btn": "?searchViewGoIcon",
+        "abs__search_voice_btn": "?searchViewVoiceIcon"
+    },
+    "color_dialog_item": {
+        "color_dialog_item_$_drawable": "c00"
+    },
+    "calendar": {
+        "calendar_$_imageview_left": "ic_action_left",
+        "calendar_$_imageview_right": "ic_action_right"
+    },
+    "note_grid_item": {
+        "note_item_$_imageview_lock": "ic_action_lock_dark",
+        "note_item_$_imageview_reminder": "ic_action_clock_dark"
+    },
+    "abs__action_bar_title_item": {
+        "abs__up": "?homeAsUpIndicator"
+    },
+    "abs__search_dropdown_item_icons_2line": {
+        "edit_query": "?searchViewEditQuery"
+    },
+    "options_view_row": {
+        "catalog_view_row_$_imageview_icon": "ic_launcher"
+    }
+}

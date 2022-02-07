@@ -1,0 +1,11 @@
+{
+    "adapter_shopping_list": {
+        "allItemsChecked": "btn_check_on_holo_dark"
+    },
+    "about_app": {
+        "about_bt_icon_shopping_list": "ic_launcher"
+    },
+    "abc_action_mode_close_item_material": {
+        "action_mode_close_button": "?actionModeCloseDrawable"
+    }
+}

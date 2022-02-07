@@ -1,0 +1,15 @@
+{
+    "history_listview": {
+        "imageView2": "minusbutton"
+    },
+    "abc_action_mode_close_item_material": {
+        "action_mode_close_button": "?actionModeCloseDrawable"
+    },
+    "activity_main": {
+        "imageButton2": "plusbutton",
+        "imageButton": "minusbutton"
+    },
+    "activity_input": {
+        "imageView": "minusbutton"
+    }
+}

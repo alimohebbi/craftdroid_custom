@@ -1,0 +1,63 @@
+{
+    "shopping_list_dialog": {
+        "imageview_statistics": "ic_insert_chart_white_24sp",
+        "expand_button_list": "ic_keyboard_arrow_down_white_48sp"
+    },
+    "shopping_list_tutorial": {
+        "imageView2": "ic_keyboard_arrow_right_black_24sp",
+        "imageView3": "ic_keyboard_arrow_right_black_24sp",
+        "imageview_high_prio_icon": "ic_error_black_24sp"
+    },
+    "products_tutorial": {
+        "imageView2": "ic_keyboard_arrow_right_black_24sp",
+        "imageView3": "ic_keyboard_arrow_right_black_24sp"
+    },
+    "product_dialog": {
+        "expand_button": "ic_keyboard_arrow_down_white_48sp",
+        "camera_button": "ic_camera_alt_white_48sp",
+        "image_view": "ic_menu_camera"
+    },
+    "shopping_list_item": {
+        "reminder_bar": "button_normal",
+        "imageview_reminder_icon": "ic_perm_group_device_alarms",
+        "imageview_high_prio_icon": "ic_error_black_24sp",
+        "expand_button_list": "ic_keyboard_arrow_down_white_48sp"
+    },
+    "nav_header_main": {
+        "imageView": "ic_launcher"
+    },
+    "product_list_item": {
+        "expand_button_list": "ic_keyboard_arrow_down_white_48sp"
+    },
+    "camera_preview": {
+        "button_capture": "ic_camera_alt_white_48sp",
+        "button_flash": "ic_flash_auto_white_48sp",
+        "button_retake": "ic_undo_white_48sp"
+    },
+    "products_activity": {
+        "cancel_search": "ic_cancel_white_48sp",
+        "fab_new_product": "ic_input_add"
+    },
+    "delete_lists_activity": {
+        "fab_delete_lists": "ic_delete_white_24sp"
+    },
+    "shopping_list_item_left_hand": {
+        "reminder_bar": "button_normal",
+        "imageview_reminder_icon": "ic_perm_group_device_alarms",
+        "imageview_high_prio_icon": "ic_error_black_24sp",
+        "expand_button_list": "ic_keyboard_arrow_down_white_48sp"
+    },
+    "delete_products_activity": {
+        "fab_delete_products": "ic_delete_white_24sp"
+    },
+    "product_list_item_left_hand": {
+        "expand_button_list": "ic_keyboard_arrow_down_white_48sp"
+    },
+    "activity_about": {
+        "barcodeLogo": "privacyfriendlyappslogo",
+        "imageView1": "secuso_logo_blau_blau"
+    },
+    "app_bar_main": {
+        "fab_new_list": "ic_input_add"
+    }
+}
