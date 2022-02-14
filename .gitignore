@@ -14,3 +14,4 @@ config.yml
 manager/config_sample.csv
 manager/migrations.csv
 manager/results.csv
+manager/sm_config

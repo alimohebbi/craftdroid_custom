@@ -19,7 +19,7 @@ def add_config_file(migration):
     col = list(migration.keys())
     col = list(set(col) - {'error', 'test_exist', 'src', 'target', 'task'})
     conf = dict(migration[col])
-    conf['app_pair'] = 'craftdroid'
+    conf['app_pair'] = '-'.join([migration['src'], migration['target'], migration['task'], 'craftdroid'])
     with open(file_path, 'w') as f:
         json.dump(conf, f)
 
