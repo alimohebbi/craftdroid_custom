@@ -14,7 +14,7 @@ start_command = ['emulator', '-ports', ' 5554,5555', '-avd', config.emulator, '-
 stop_command = [
     'adb', '-s', 'emulator-5554', 'emu', 'kill'
 ]
-work_dir = '/Users/usiusi/Library/Android/sdk/emulator/'
+# work_dir = '/Users/usiusi/Library/Android/sdk/emulator/'
 
 
 def start_emulator():
