@@ -50,9 +50,6 @@ class FileNameFinder:
         src_dummy_widget = {'text': activity, 'class': 'Button'}
         candidates_dummy_widgets = [{'text': i, 'class': 'Button'} for i in candidates_activity]
         match_obj = MatchObject(src_dummy_widget, candidates_dummy_widgets, None)
-        sm_config = {"algorithm": "custom", "word_embedding": "wm", "descriptors": "atm",
-                     "training_set": "android", "app_pair": 'craftdroid'}
-        match_obj.set_sm_config(sm_config)
         return match_obj
 
 
