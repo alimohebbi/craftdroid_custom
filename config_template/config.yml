@@ -32,6 +32,7 @@ algorithm:
   - craftdroid
   - custom
   - atm
+  - perfect
 descriptors:
   - union
   - intersection
