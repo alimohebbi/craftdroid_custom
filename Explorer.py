@@ -230,7 +230,7 @@ class Explorer:
                 # additional exploration (ATG and widget_db update) for empty oracle (e.g., a51-a53-b51)
                 if tgt_event['class'] == 'EMPTY_EVENT' and tgt_event['event_type'] == 'oracle' and not is_explored:
                     print('Empty event for an oracle. Try to explore the app')
-                    # self.reset_and_explore(self.tgt_events)
+                    self.reset_and_explore(self.tgt_events)
                     is_explored = True
                     continue
                 else:
@@ -257,7 +257,7 @@ class Explorer:
             # update ATG and widget_db by a systematic exploration and start over
             if self.f_target == self.f_prev_target == 0:
                 print('All Empty Events. Explore the app and start over.')
-                # self.reset_and_explore()
+                self.reset_and_explore()
                 self.tgt_events = []
                 self.prev_tgt_events = []
                 self.f_prev_target = -1
