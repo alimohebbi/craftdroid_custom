@@ -30,7 +30,7 @@ def forbidden_config(semantic_config):
     if semantic_config['algorithm'] == 'perfect':
         return semantic_config['descriptors'] != 'union' or semantic_config['training_set'] != 'empty' or \
                semantic_config['word_embedding'] != 'edit_distance'
-    if semantic_config['word_embedding'] in ['jaccard', 'w2v', 'random']:
+    if semantic_config['word_embedding'] in ['jaccard', 'edit_distance', 'random']:
         return semantic_config['training_set'] != 'empty'
     if semantic_config['word_embedding'] in ['use', 'nnlm', 'bert']:
         return semantic_config['training_set'] != 'standard'
