@@ -108,4 +108,4 @@ if __name__ == '__main__':
                                      'test_exist': ''}
                         first_round_migration()
                         # redo_failed_migaratoins()
-                        results.dto_csv(config.results, index=False)
+                        results.to_csv(config.results, index=False)
