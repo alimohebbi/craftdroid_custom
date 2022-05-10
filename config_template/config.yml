@@ -11,7 +11,7 @@ migration_plan_path: "manager/migrations.csv"
 results: "manager/results.csv"
 migration_log_dir: "log"
 generated_dir: "manager/generated"
-migration_timeout: 90000
+migration_timeout: 9000
 embedding:
   - wm
   - w2v
