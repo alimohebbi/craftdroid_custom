@@ -33,7 +33,11 @@ def refine_event(src_event):
     for i in src_event.keys():
         if i not in WidgetUtil.FEATURE_KEYS:
             src_copy.pop(i)
-    event = get_widget_from_dom(src_copy, src_event['page'])
+    invisible = True if 'invisible' in src_event['action'][0] else False
+    if invisible:
+        return src_event
+    else:
+        event = get_widget_from_dom(src_copy, src_event['page'])
     event['activity'] = src_event['activity']
     event['event_type'] = src_event['event_type']
     event['action'] = src_event['action']
