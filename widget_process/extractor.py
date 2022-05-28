@@ -23,7 +23,7 @@ def get_widget_from_dom(attr, dom):
 
 
 def get_src_labels(src_event):
-    if src_event['action'][0]== 'KEY_BACK':
+    if src_event['action'][0] == 'KEY_BACK':
         return []
     widgets = find_all_widgets(src_event['page'])
     _, labels = separate_actionable_label(src_event, widgets)
@@ -37,6 +37,13 @@ def refine_event(src_event):
             src_copy.pop(i)
     invisible = True if 'invisible' in src_event['action'][0] else False
     key_back = True if 'KEY_BACK' in src_event['action'][0] else False
+
+    if invisible:
+        src_event.pop('page')
+        src_event['class'] = "android.widget.TextView"
+    if key_back:
+        src_event["event_type"] = "SYS_EVENT"
+        src_event["class"] = "SYS_EVENT"
     if invisible or key_back:
         return src_event
     else:

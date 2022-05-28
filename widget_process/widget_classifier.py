@@ -10,11 +10,11 @@ def separate_actionable_label(src_event, dynamic_widgets):
                 labels.append(w)
         else:
             actionables.append(w)
-
-    if 'wait_until_element' in src_event['action'][0]:
+    if 'action' in src_event and 'wait_until_element' in src_event['action'][0]:
         return dynamic_widgets, labels
     else:
         return actionables, labels
+
 
 
 def get_dynamic_widgets(widgets):
